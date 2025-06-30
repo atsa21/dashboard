@@ -1,5 +1,9 @@
 <div class="header">
   @if (currentUser) {
     <h1 class="title-1">Hi {{ currentUser.name }}, welcome! You have {{ currentUser.task_count }} open tasks.</h1>
+    <div class="header-actions">
+      <app-input placeholder="Search"></app-input>
+      <app-profile-icon [user]="currentUser"></app-profile-icon>
+    </div>
   }
 </div>

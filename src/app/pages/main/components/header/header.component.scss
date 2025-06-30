@@ -5,8 +5,18 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 137px;
   color: $beige;
-  background-color: $black;
+  background-color: $ternary;
   border-bottom: 1px solid #313B54;
+
+  &-actions {
+    display: flex;
+    gap: 11px;
+
+    app-input {
+      width: 479px;
+    }
+  }
 }
