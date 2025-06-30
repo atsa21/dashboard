@@ -1,0 +1,12 @@
+@import "src/assets/styles/vars";
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  background-color: $black;
+
+  & .page {
+    height: calc(100vh - 95px);
+    padding: 0 137px;
+  }
+}
