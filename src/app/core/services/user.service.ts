@@ -24,7 +24,6 @@ export class UserService extends AbstractHttp {
   public getUser(): Observable<UserModel> {
     return this.httpGetRequest<UserModel>('/assets/mock/mock-data-user.json').pipe(
       tap((user) => {
-        console.log(user);
         this.setCurrentUser(user);
       }),
     );

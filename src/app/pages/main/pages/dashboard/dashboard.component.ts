@@ -35,7 +35,6 @@ export class DashboardComponent implements OnInit {
   ){}
 
   public get wordQueue() {
-    console.log(this.wordQueueSignal());
     return this.wordQueueSignal();
   }
 
@@ -77,7 +76,6 @@ export class DashboardComponent implements OnInit {
   }
 
   private getWordQueue(): Observable<PaginatedWorkQueue> {
-    console.log(this.filters);
     return this.wordQueueService
       .getWorkQueue(this.filters)
       .pipe(
