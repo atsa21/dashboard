@@ -9,3 +9,11 @@
 ) {
   font: $font-weight $font-style #{$size}/#{$height $font-family};
 }
+
+@mixin svg-stroke($color) {
+  &::ng-deep svg {
+    & path, & circle {
+      stroke: $color;
+    }
+  }
+}

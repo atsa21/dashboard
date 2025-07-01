@@ -8,3 +8,16 @@ export interface IKeyValue<T = unknown> {
   display: string;
   isSelected?: boolean;
 }
+
+export interface TabModel<T = any> {
+  id: number | string;
+  display: string;
+  value?: string;
+  isSelected?: boolean;
+  icon?: string;
+  count?: number;
+}
+
+export interface TabNavigationModel extends TabModel {
+  routerPath: string;
+}
