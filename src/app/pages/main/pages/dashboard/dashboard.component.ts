@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   private user: UserModel | null = null;
   private filters = {
     offset: 0,
-    limit: 6,
+    limit: 12,
     assign: '',
   };
 
