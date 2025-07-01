@@ -11,6 +11,11 @@ import { AdminComponent } from './pages/admin/admin.component';
 
 export const children: Routes = [
   { 
+    path: '',
+    redirectTo: appRouts.dashboard.routerPath,
+    pathMatch: 'full',
+  },
+  { 
     path: appRouts.dashboard.routerPath,
     component: DashboardComponent,
   },

@@ -1,0 +1,16 @@
+@if (filters) {
+  <div class="filters">
+    @for (filter of filters; track filter) {
+      <button
+        class="filter-item"
+        [class.active]="filter.isSelected"
+        (click)="onSelectFilter(filter)"
+      >
+        <p class="title-2">{{ filter.display }}
+          @if (filter.count) {
+            <span>({{ filter.count }})</span>
+          }</p>
+      </button>
+    }
+  </div>
+}

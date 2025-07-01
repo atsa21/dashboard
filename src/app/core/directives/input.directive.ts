@@ -17,12 +17,11 @@ export class InputDirective implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const field = this.createField();
-    const fieldWrapper = this.createFieldWrapper();
+
     const el = this.createCurrentElField();
     const parent = el.parentNode;
     this.renderer2.insertBefore(parent, field, el);
-    this.renderer2.appendChild(field, fieldWrapper);
-    this.renderer2.appendChild(fieldWrapper, el);
+
   }
 
   ngOnDestroy(): void {
@@ -47,15 +46,7 @@ export class InputDirective implements OnInit, OnDestroy {
   private createField(): HTMLElement {
     const field = this.renderer2.createElement('div');
 
-    this.renderer2.addClass(field, 'app-input-field');
-
-    return field;
-  }
-
-  private createFieldWrapper(): HTMLElement {
-    const field = this.renderer2.createElement('div');
-
-    this.renderer2.addClass(field, 'app-input-field-wrapper');
+    this.renderer2.addClass(field, 'app-input-container');
 
     return field;
   }

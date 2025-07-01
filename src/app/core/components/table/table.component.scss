@@ -1,0 +1,12 @@
+@import "src/assets/styles/vars";
+@import "src/assets/styles/mixins";
+
+.filters {
+  margin-bottom: 24px;
+}
+
+app-icon {
+  @include svg-fill($white);
+
+  cursor: pointer;
+}

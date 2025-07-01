@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { InputComponent } from '@core/components/input/input.component';
 import { ProfileIconComponent } from '@core/components/profile-icon/profile-icon.component';
+import { InputDirective } from '@core/directives/input.directive';
 import { UserService } from '@core/services';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ProfileIconComponent, InputComponent],
+  imports: [ProfileIconComponent, InputDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

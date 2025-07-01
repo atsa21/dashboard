@@ -2,10 +2,17 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
+@use "assets/styles/styles_theme-colors" as my-theme;
 @import "assets/styles/index.components";
 
 html {
+  color-scheme: dark;
+
   @include mat.theme((
+    color: (
+      primary: my-theme.$primary-palette,
+      tertiary: my-theme.$tertiary-palette,
+    ),
     typography: Roboto,
     density: 0,
   ));
@@ -17,7 +24,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family:"Montserrat", sans-serif;
 }
 
 * {
@@ -29,3 +36,18 @@ body {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px $grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent;
+  transition: hover 1s ease-in;
+}
+

@@ -1,29 +1,38 @@
-import { FilterConfigModel, TableColumnsModel } from "@core/models";
+import { ETableItemType } from "@core/enums";
+import { TableColumnsModel } from "@core/models";
 
 export const WorkQueueTableColumns: TableColumnsModel[] = [
   {
-    key: 'name',
-    display: 'File'
+    key: 'originator',
+    display: 'Originator',
+    type: ETableItemType.User,
+    obj_keys: ['name', 'last_name'],
+  },
+  {
+    key: 'client',
+    display: 'Client',
+    type: ETableItemType.Subtext,
+    obj_keys: ['name', 'line'],
+    subtitle_key: 'name',
+  },
+  {
+    key: 'type',
+    display: 'Type',
+    type: ETableItemType.KeyValue,
   },
   {
     key: 'status',
-    display: 'Status'
+    display: 'Status',
+    type: ETableItemType.Status,
   },
   {
-    key: 'updatedAt',
-    display: 'Updated at'
+    key: 'created',
+    display: 'Created',
+    type: ETableItemType.Date,
   },
-];
-
-export const WorkQueueTableFilters: FilterConfigModel[] = [
   {
-    value: 'assign',
-    display: 'Assign',
-    options: [
-      {
-        value: '',
-        display: '',
-      },
-    ],
+    key: 'menu.svg',
+    display: '',
+    type: ETableItemType.Menu,
   },
 ];

@@ -1,0 +1,9 @@
+@if (status) {
+  <div
+    class="status"
+    [ngClass]="status.value"
+  >
+    <div class="status-dot"></div>
+    <p class="body-text-3">{{ status.display }}</p>
+  </div>
+}

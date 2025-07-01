@@ -1,0 +1,41 @@
+@import "src/assets/styles/vars";
+
+.status {
+  display: flex;
+  align-items: center;
+  height: 14px;
+  gap: 2px;
+
+  &-dot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+  }
+
+  & .body-text-3 {
+    text-wrap: nowrap;
+  }
+
+  &.new .status-dot {
+    background-color: $accent;
+  }
+
+  &.pending_review,
+  &.pending {
+    .status-dot {
+      background-color: $yellow;
+    }
+  }
+
+  &.completed,
+  &.active {
+    .status-dot {
+      background-color: $green;
+    }
+  }
+
+  &.under_review .status-dot {
+    background-color: $blue;
+  }
+}

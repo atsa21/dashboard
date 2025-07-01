@@ -1,5 +1,5 @@
 export enum EWorkQueueStatus {
-  New = 'NEW',
-  Pending = 'PENDING_REVIEW',
-  Completed = 'COMPLETED',
+  New = 'new',
+  Pending = 'pending_review',
+  Completed = 'completed',
 }

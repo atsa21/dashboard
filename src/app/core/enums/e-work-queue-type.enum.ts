@@ -1,5 +1,5 @@
 export enum EWorkQueueType {
-  UnderwriterReferral = 'UNDERWRITER_REFERRAL',
-  LossControlRequest = 'LOSS_CONTROL_REQUEST',
-  Email = 'EMAIL',
+  UnderwriterReferral = 'underwriter_referral',
+  LossControlRequest = 'loss_control_request',
+  Email = 'email',
 }

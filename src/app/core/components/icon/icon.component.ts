@@ -21,7 +21,7 @@ export class IconComponent {
   @Input()
   set url(iconUrl: string) {
     if (iconUrl) {
-      this.loadSvg(iconUrl);
+      this.loadSvg(`assets/icons/${iconUrl}`);
     }
   }
 

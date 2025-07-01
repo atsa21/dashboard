@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
   padding: 0 137px;
   color: $beige;
   background-color: $ternary;
@@ -15,7 +16,7 @@
     display: flex;
     gap: 11px;
 
-    app-input {
+    input {
       width: 479px;
     }
   }

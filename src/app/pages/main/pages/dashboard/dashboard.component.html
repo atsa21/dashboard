@@ -1,5 +1,39 @@
 <div class="container">
-  @if (wordQueue) {
-    <app-table [tableData]="wordQueue" [tableColumns]="workQueueTableColumns"/>
-  }
+  <div class="container-top">
+    @if (wordQueue) {
+      <div class="box table-box">
+        <h1 class="title-2">Work Queue</h1>
+        <app-table [tableFilters]="tableFilters" [tableData]="wordQueue" [tableColumns]="workQueueTableColumns" (filterUpdate)="filteUpdate($event)"/>
+      </div>
+    }
+    @if (wordQueue) {
+      <div class="box portfolio-box">
+        <h1 class="title-2">Portfolio goals</h1>
+        <div>
+          <p class="body-text-4">Portfolio loss ratio target</p>
+        </div>
+        <div>
+          <p class="body-text-4">Renewal Retention</p>
+        </div>
+        <div>
+          <p class="body-text-4">New business target</p>
+        </div>
+        <div>
+          <p class="body-text-4">Annual GWP target</p>
+        </div>
+      </div>
+    }
+    @if (wordQueue) {
+      <div class="box-column">
+        <div class="box box-half">
+
+        </div>
+        <div class="box box-half">
+
+        </div>
+      </div>
+    }
+  </div>
+
+  
 </div>

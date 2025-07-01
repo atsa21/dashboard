@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, OnInit, Self } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, Self, signal, Signal } from '@angular/core';
 import { TableComponent } from '@core/components/table/table.component';
 import { DefaultPagination } from '@core/constants/application';
-import { UserModel } from '@core/models';
+import { FilterConfigModel, UserModel, WorkQueueFilterModel } from '@core/models';
 import { UnsubscribeService, UserService, WorkQueueService } from '@core/services';
-import { PaginatedWorkQueue } from '@core/types';
+import { PaginatedWorkQueue, PaginatedWorkQueueFilters } from '@core/types';
 import { WorkQueueTableColumns } from './constants/dashboard.const';
+import { Observable, switchMap, take, tap } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,22 +17,71 @@ import { WorkQueueTableColumns } from './constants/dashboard.const';
   providers: [UnsubscribeService],
 })
 export class DashboardComponent implements OnInit {
-  public wordQueue = DefaultPagination<PaginatedWorkQueue>();
+  public wordQueueSignal = signal(DefaultPagination<PaginatedWorkQueue>());
   public workQueueTableColumns = WorkQueueTableColumns;
-  private user?: UserModel | null;
+  public tableFiltersSignal = signal([] as FilterConfigModel[]);
+
+  private user: UserModel | null = null;
+  private filters = {
+    offset: 0,
+    limit: 6,
+    assign: '',
+  };
 
   constructor(
     @Self() private readonly unsubscribeService$: UnsubscribeService,
     private userService: UserService,
     private wordQueueService: WorkQueueService
   ){}
+
+  public get wordQueue() {
+    console.log(this.wordQueueSignal());
+    return this.wordQueueSignal();
+  }
+
+  public get tableFilters() {
+    return this.tableFiltersSignal();
+  }
   
   ngOnInit(): void {
-    this.user = this.userService.getCurrentUserSync();
-    this.wordQueueService.getWorkQueue({creator: this.user?.id, page: 1, size: 10 })
-      .pipe(this.unsubscribeService$.takeUntilDestroy)
-      .subscribe((res: PaginatedWorkQueue) => {
-        this.wordQueue = res;
-    });
+    this.user = this.userService.getCurrentUserSync() as UserModel;
+    this.filters.assign = this.user.id;
+    this.initWordQueue();
+  }
+
+  public filteUpdate(filter: FilterConfigModel): void {
+    this.filters.assign = filter.value;
+    this.getWordQueue()
+      .pipe(
+        take(1),
+        this.unsubscribeService$.takeUntilDestroy
+      )
+      .subscribe();
+  }
+
+  private initWordQueue(): void {
+    this.wordQueueService
+      .getWorkQueueFilters()
+      .pipe(
+        take(1),
+        switchMap((filters: PaginatedWorkQueueFilters) => {
+          filters.results[0].isSelected = true;
+          this.filters.assign = filters.results[0].value;
+          this.tableFiltersSignal.set(filters.results);
+          return this.getWordQueue();
+        },
+        ),
+        this.unsubscribeService$.takeUntilDestroy,
+      )
+      .subscribe();
+  }
+
+  private getWordQueue(): Observable<PaginatedWorkQueue> {
+    console.log(this.filters);
+    return this.wordQueueService
+      .getWorkQueue(this.filters)
+      .pipe(
+        tap((res: PaginatedWorkQueue) => this.wordQueueSignal.set(res))
+      );
   }
 }
