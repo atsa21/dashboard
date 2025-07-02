@@ -5,7 +5,7 @@
   $font-weight: 400,
   $height: $line-height-base,
   $font-style: normal,
-  $font-family: "Montserrat",
+  $font-family: Poppins,
 ) {
   font: $font-weight $font-style #{$size}/#{$height $font-family};
 }

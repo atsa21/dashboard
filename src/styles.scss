@@ -2,8 +2,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
-@use "assets/styles/styles_theme-colors" as my-theme;
-@import "assets/styles/index.components";
+@use 'assets/styles/styles_theme-colors' as my-theme;
+@import 'assets/styles/index.components';
 
 html {
   color-scheme: dark;
@@ -13,7 +13,7 @@ html {
       primary: my-theme.$primary-palette,
       tertiary: my-theme.$tertiary-palette,
     ),
-    typography: Roboto,
+    typography: Poppins,
     density: 0,
   ));
 }/* You can add global styles to this file, and also import other style files */
@@ -24,7 +24,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family:"Montserrat", sans-serif;
+  font-family:"Poppins", sans-serif;
 }
 
 * {

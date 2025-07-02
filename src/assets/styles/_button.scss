@@ -1,0 +1,29 @@
+@import "vars";
+@import "mixins";
+
+.app-button {
+  @include font-base(14px, 500, 16px);
+
+  width: 100%;
+  padding: 0 16px;
+  border: 0;
+  color: $beige;
+  background-color: $accent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &.small {
+    border-radius: 14px;
+    height: 28px;
+  }
+
+  &.medium {
+    border-radius: 20px;
+    height: 40px;
+  }
+}

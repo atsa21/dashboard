@@ -7,7 +7,7 @@
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  max-height: 392px;
+  height: 392px;
   overflow-y: scroll;
 
   & .body-text-3 {
@@ -19,7 +19,6 @@
   & .table-row-header {
     height: 32px;
     background-color: $secondary;
-    text-transform: uppercase;
 
     & .body-text-3 {
       color: $grey-light;

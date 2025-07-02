@@ -1,5 +1,4 @@
 @import "src/assets/styles/vars";
-@import "src/assets/styles/mixins";
 
 .filters {
   display: flex;
@@ -16,6 +15,7 @@
     padding: 0 14px;
     background-color: $black;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     & .title-2 {
       color: $grey-lighter;
@@ -28,6 +28,10 @@
       & .title-2 {
         color: $white;
       }
+    }
+
+    &:not(.active):hover {
+      border-color: $accent;
     }
   }
 }
