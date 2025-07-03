@@ -1,0 +1,71 @@
+@import "src/assets/styles/vars";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 74px;
+
+  & .progress {
+    padding-top: 24px;
+  }
+
+  & .above,
+  & .below {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .body-text-4 {
+      position: absolute;
+      text-align: center;
+    }
+  }
+
+  & .above {
+    top: 8px;
+
+    &.no-arrow {
+      top: 24px;
+
+      & .body-text-4 {
+        bottom: 11px;
+        left: -40px;
+        width: 100px;
+      }
+    }
+
+    & .body-text-4 {
+      color: $grey-light;
+      bottom: 11px;
+      left: -40px;
+      width: 100px;
+    }
+  }
+
+  & .below {
+    top: 48px;
+
+    & .body-text-4 {
+      top: 12px;
+      left: -40px;
+      width: 100px;
+    }
+
+    & .green {
+      color: $green;
+    }
+
+    & .body-text-3 {
+      position: absolute;
+      text-align: center;
+      top: -17px;
+    }
+
+    &.zero-center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

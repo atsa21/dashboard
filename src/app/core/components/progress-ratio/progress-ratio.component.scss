@@ -1,0 +1,54 @@
+@import "src/assets/styles/vars";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  & .amount {
+    display: grid;
+    grid-template-columns: 1fr 34px;
+    column-gap: 4px;
+  }
+}
+
+.progress {
+  display: flex;
+  position: relative;
+  height: 38px;
+
+
+}
+
+.back-progress {
+  height: 25px;
+  width: 100%;
+  background-color: $ternary-light;
+  border-radius: 0 12px 12px 0;
+}
+
+.top-progress {
+  position: absolute;
+
+  & .prog {
+    position: absolute;
+    height: 25px;
+    border-radius: 0 12px 12px 0;
+    background: linear-gradient(90deg, $ternary-light 0%, $accent 100%);
+
+    & .progress-value,
+    & .progress-amount {
+      position: absolute;
+    }
+
+    & .progress-value {
+      top: 6px;
+      right: 8px;
+    }
+
+    & .progress-amount {
+      color: $grey-light;
+      top: 26px;
+      right: 8px;
+    }
+  }
+}

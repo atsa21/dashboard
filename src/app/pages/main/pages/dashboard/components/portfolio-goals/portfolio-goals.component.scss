@@ -9,4 +9,20 @@
   border-radius: 24px;
   height: 100%;
   gap: 24px;
+
+  & .items {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  & .body-text-3 {
+    color: $grey-light;
+  }
 }

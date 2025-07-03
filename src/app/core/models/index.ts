@@ -4,3 +4,6 @@ export * from './application.model';
 export * from './work-queue.model'
 export * from './client.model';
 export * from './line.model';
+export * from './portfolio-goals.model';
+export * from './news.model';
+

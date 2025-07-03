@@ -1,0 +1,26 @@
+{
+  "ratio": {
+    "title": "TG:55%",
+    "img": "assets/images/ratio-target.svg",
+    "subtitle": "-6.8% (GOOD)",
+    "is_arrow_title": true,
+    "percentage": 150,
+    "value": 48.2
+  },
+  "ratio_retentional": {
+    "title": "TG:85-90%",
+    "img": "assets/images/renewal-retention.svg",
+    "subtitle": "ON TARGET",
+    "is_arrow_title": false,
+    "percentage": 150,
+    "value": 88
+  },
+  "business_target": {
+    "value": 8.1,
+    "objective_value": 12
+  },
+  "gwp_target": {
+    "value": 28.4,
+    "objective_value": 42
+  }
+}

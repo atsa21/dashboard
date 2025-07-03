@@ -1,18 +1,23 @@
-<div class="container">
-  <h1 class="title-2">Portfolio goals</h1>
-  <div>
-    <p class="body-text-4 t-uppercase">Portfolio loss ratio target</p>
-    <div>
-      
+@if (ratio) {
+  <div class="container">
+    <h1 class="title-2">Portfolio goals</h1>
+    <div class="items">
+      <div class="item">
+        <p class="body-text-3 t-uppercase">Portfolio loss ratio target</p>
+        <app-ratio-target [ratio]="ratio.ratio"/>
+      </div>
+      <div class="item">
+        <p class="body-text-3 t-uppercase">Renewal Retention</p>
+        <app-ratio-target [ratio]="ratio.ratio_retentional"/>
+      </div>
+      <div class="item">
+        <p class="body-text-3 t-uppercase">New business target</p>
+        <app-progress-ratio [progress]="ratio.business_target"/>
+      </div>
+      <div class="item">
+        <p class="body-text-3 t-uppercase">Annual GWP target</p>
+        <app-progress-ratio [progress]="ratio.gwp_target"/>
+      </div>
     </div>
   </div>
-  <div>
-    <p class="body-text-4 t-uppercase">Renewal Retention</p>
-  </div>
-  <div>
-    <p class="body-text-4 t-uppercase">New business target</p>
-  </div>
-  <div>
-    <p class="body-text-4 ">Annual GWP target</p>
-  </div>
-</div>
+}

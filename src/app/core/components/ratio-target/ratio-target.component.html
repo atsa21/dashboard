@@ -1,0 +1,25 @@
+@if (ratio) {
+  <div class="container">
+    <div
+      class="above"
+      [class.no-arrow]="!ratio.is_arrow_title"
+      [ngStyle]="{
+        left: titleLeft + 'px'
+      }">
+      <p class="body-text-4">{{ ratio.title }}</p>
+      @if (ratio.is_arrow_title) {
+        <img src="assets/images/arrow-down.svg" alt="arrow down"/>
+      }
+    </div>
+    <img class="progress" [src]="ratio.img" alt="ratio"/>
+    <div
+      class="below"
+      [ngStyle]="{
+        left: titleLeft + 'px'
+      }">
+      <p class="body-text-3 value">{{ ratio.value }}%</p>
+      <img src="assets/images/arrow-up.svg" alt="arrow up"/>
+      <p class="body-text-4 green">{{ ratio.subtitle }}</p>
+    </div>
+  </div>
+}

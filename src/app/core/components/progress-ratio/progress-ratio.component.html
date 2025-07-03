@@ -1,0 +1,19 @@
+@if (progress) {
+  <div class="container">
+    <div class="amount">
+      <div class="progress">
+        <div class="back-progress"></div>
+        <div class="top-progress">
+          <div
+            class="prog"
+            [ngStyle]="{ width: progressWidth + 'px'}"
+          >
+            <p class="progress-value body-text-3">${{ progress.value }}M</p>
+            <p class="progress-amount body-text-4">{{ progressAmount }}%</p>
+          </div>
+        </div>
+      </div>
+      <p>${{ progress.objective_value }}M</p>
+    </div>
+  </div>
+}
