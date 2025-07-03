@@ -1,0 +1,31 @@
+@import "src/assets/styles/vars";
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & .filter-item {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    border: 1px solid $accent;
+    border-radius: 24px;
+    padding: 0 24px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    & .title-2 {
+      color: $accent;
+    }
+
+    &:not(.active):hover {
+      background-color: $accent;
+
+      & .title-2 {
+        color: $white;
+      }
+    }
+  }
+}

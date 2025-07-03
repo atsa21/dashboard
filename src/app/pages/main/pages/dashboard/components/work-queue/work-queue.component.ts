@@ -10,14 +10,14 @@ import { WorkQueueTableColumns } from './constants/work-queue.const';
 
 @Component({
   selector: 'app-work-queue',
-  standalone: true,
+
   imports: [TableComponent],
   templateUrl: './work-queue.component.html',
   styleUrl: './work-queue.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [UnsubscribeService],
 })
-export class WorkQueueComponent {
+export class WorkQueueComponent implements OnInit {
   public wordQueueSignal = signal(DefaultPagination<PaginatedWorkQueue>());
   public workQueueTableColumns = WorkQueueTableColumns;
   public tableFiltersSignal = signal([] as FilterConfigModel[]);

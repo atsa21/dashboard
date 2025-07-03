@@ -9,10 +9,11 @@ import { IconComponent } from '../icon/icon.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { FiltersComponent } from '../filters/filters.component';
+import { MoneyPipe } from '@core/pipes/money.pipe';
+import { ChipCellComponent } from '../chip-cell/chip-cell.component';
 
 @Component({
   selector: 'app-table',
-  standalone: true,
   imports: [
     CommonModule,
     MatTableModule,
@@ -23,6 +24,8 @@ import { FiltersComponent } from '../filters/filters.component';
     MatMenuModule,
     MatButtonModule,
     FiltersComponent,
+    MoneyPipe,
+    ChipCellComponent,
   ],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss',
@@ -30,6 +33,7 @@ import { FiltersComponent } from '../filters/filters.component';
 })
 export class TableComponent<T> {
   @Input() tableFilters: FilterConfigModel[] = [];
+  @Input() height = 392;
   @Output() filterUpdate: EventEmitter<FilterConfigModel> = new EventEmitter<FilterConfigModel>();
 
   public dataSource = new MatTableDataSource<any>();

@@ -18,7 +18,6 @@ export class ProgressRatioComponent {
 
   public get progressWidth(): number {
     const maxPx = 197;
-    console.log((this.progressAmount / 100) * maxPx);
 
     return (this.progressAmount / 100) * maxPx;
   }

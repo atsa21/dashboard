@@ -1,0 +1,38 @@
+@import "src/assets/styles/vars";
+
+.chip {
+  display: flex;
+  justify-content: center;
+  height: 24px;
+  border-radius: 12px;
+  padding: 6px 8px;
+
+  &.border {
+    background-color: transparent;
+    border: 1px solid $accent;
+    width: min-content;
+    gap: 6px;
+    padding: 5px 8px;
+    align-items: self-start;
+
+    & .body-text-3 {
+      color: $accent;
+    }
+  }
+
+  & .dot-box {
+    display: flex;
+    gap: 4px;
+
+    & .dot {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      background-color: $accent;
+    }
+  }
+
+  & .body-text-3.dark {
+    color: $black;
+  }
+}

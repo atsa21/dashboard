@@ -9,7 +9,6 @@ import { TabNavigationModel } from '@core/models';
 
 @Component({
   selector: 'app-main',
-  standalone: true,
   imports: [RouterOutlet, HeaderComponent, TabsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

@@ -7,4 +7,6 @@ export enum ETableItemType {
   Menu = 'menu',
   Subtext = 'subtext',
   Line = 'line',
+  Money = 'money',
+  Ratio = 'ratio',
 }

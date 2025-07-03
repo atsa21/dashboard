@@ -6,7 +6,6 @@ import { take } from 'rxjs';
 
 @Component({
   selector: 'app-marketing-intelligence',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './marketing-intelligence.component.html',
   styleUrl: './marketing-intelligence.component.scss',
@@ -26,6 +25,9 @@ export class MarketingIntelligenceComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.newsService.getNews().pipe(take(1)).subscribe((res) => this.newsSignal.set(res.results));
+    this.newsService
+      .getNews()
+      .pipe(take(1), this.unsubscribeService$.takeUntilDestroy)
+      .subscribe((res) => this.newsSignal.set(res.results));
   }
 }

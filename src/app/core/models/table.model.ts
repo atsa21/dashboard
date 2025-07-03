@@ -7,6 +7,8 @@ export interface TableColumnsModel {
   obj_keys?: string[];
   subtitle_key?: string;
   icon?: string;
+  blue_text?: boolean;
+  colored?: boolean;
 }
 
 export interface FilterConfigModel {

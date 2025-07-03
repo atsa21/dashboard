@@ -5,7 +5,6 @@ import { NameInitialsPipe } from '@core/pipes/name-initials.pipe';
 
 @Component({
   selector: 'app-profile-icon',
-  standalone: true,
   imports: [CommonModule, NameInitialsPipe],
   templateUrl: './profile-icon.component.html',
   styleUrl: './profile-icon.component.scss',

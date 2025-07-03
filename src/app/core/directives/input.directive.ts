@@ -46,8 +46,6 @@ export class InputDirective implements OnInit, OnDestroy {
   private createField(): HTMLElement {
     const field = this.renderer2.createElement('div');
 
-    this.renderer2.addClass(field, 'app-input-container');
-
     return field;
   }
 }

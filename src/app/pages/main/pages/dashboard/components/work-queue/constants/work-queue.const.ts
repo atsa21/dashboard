@@ -10,7 +10,7 @@ export const WorkQueueTableColumns: TableColumnsModel[] = [
   },
   {
     key: 'client',
-    display: 'Client',
+    display: 'Client/Line',
     type: ETableItemType.Subtext,
     obj_keys: ['name', 'line'],
     subtitle_key: 'name',
@@ -19,6 +19,7 @@ export const WorkQueueTableColumns: TableColumnsModel[] = [
     key: 'type',
     display: 'Type',
     type: ETableItemType.KeyValue,
+    subtitle_key: 'value',
   },
   {
     key: 'status',

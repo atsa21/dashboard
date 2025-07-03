@@ -5,7 +5,6 @@ import { UserService } from '@core/services';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
   imports: [ProfileIconComponent, InputDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

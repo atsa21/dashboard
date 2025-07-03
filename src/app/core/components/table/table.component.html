@@ -1,8 +1,11 @@
 @if (columns.length) {
-  <div *ngIf="tableFilters?.length" class="filters">
-    <app-filters [filters]="tableFilters" (selectFilter)="filterUpdate.emit($event)"/>
-  </div>
-  <div class="table-container">
+  @if (tableFilters.length) {
+    <div class="filters">
+      <app-filters [filters]="tableFilters" (selectFilter)="filterUpdate.emit($event)"/>
+    </div>
+  }
+
+  <div class="table-container" [ngStyle]="{ height: height + 'px'}">
     <div>
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         @for (column of columns; track column;) {
@@ -16,13 +19,34 @@
                   <p class="body-text-3">{{ row[column.key] }}</p>
                 }
                 @case (eTableItemType.KeyValue) {
-                  <p class="body-text-3">{{ row[column.key].display }}</p>
+                  <p class="body-text-3">{{ row[column.key][column?.subtitle_key || 'value'] }}</p>
                 }
                 @case (eTableItemType.Date) {
                   <p class="body-text-3">{{ row[column.key] | date: 'MM/dd/yyyy' }}</p>
                 }
                 @case (eTableItemType.Status) {
                   <app-status [status]="row[column.key]"></app-status>
+                }
+                @case (eTableItemType.Money) {
+                  <p class="body-text-3" [class.blue]="column?.blue_text">{{ row[column.key] | money }}</p>
+                }
+                @case (eTableItemType.Ratio) {
+                  @if (typeof row[column.key] === 'object') {
+                    <app-chip-cell
+                      [text]="row[column.key].display"
+                      [value]="row[column.key].value"
+                      [isColorRate]="column.colored || false"
+                      [isBorder]="column.blue_text || false"
+                      [isRate]="typeof row[column.key] === 'object'"
+                    ></app-chip-cell>
+                  } @else {
+                    <app-chip-cell
+                      [text]="column.colored ? row[column.key] + '%' : row[column.key]"
+                      [value]="row[column.key]"
+                      [isColorRate]="column.colored || false"
+                      [isBorder]="column.blue_text || false"
+                    ></app-chip-cell>
+                  }
                 }
                 @case (eTableItemType.User) {
                   <div class="table-item">

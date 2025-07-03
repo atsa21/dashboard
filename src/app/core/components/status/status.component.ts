@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { EWorkQueueStatus } from '@core/enums';
 import { IKeyValue } from '@core/models';
 
 @Component({

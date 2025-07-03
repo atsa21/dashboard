@@ -7,7 +7,6 @@ import { take } from 'rxjs';
 
 @Component({
   selector: 'app-portfolio-goals',
-  standalone: true,
   imports: [RatioTargetComponent, ProgressRatioComponent],
   templateUrl: './portfolio-goals.component.html',
   styleUrl: './portfolio-goals.component.scss',
@@ -27,6 +26,9 @@ export class PortfolioGoalsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.portfolioGoalsService.getPortfolioGoals().pipe(take(1)).subscribe((res) => this.ratioSignal.set(res));
+    this.portfolioGoalsService
+      .getPortfolioGoals()
+      .pipe(take(1), this.unsubscribeService$.takeUntilDestroy)
+      .subscribe((res) => this.ratioSignal.set(res));
   }
 }

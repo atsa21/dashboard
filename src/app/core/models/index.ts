@@ -6,4 +6,4 @@ export * from './client.model';
 export * from './line.model';
 export * from './portfolio-goals.model';
 export * from './news.model';
-
+export * from './account.model';

@@ -11,6 +11,7 @@
   color: $beige;
   background-color: $ternary;
   border-bottom: 1px solid $primary-light;
+  z-index: 99;
 
   &-actions {
     display: flex;
