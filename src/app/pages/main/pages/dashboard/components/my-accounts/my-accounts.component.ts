@@ -7,6 +7,7 @@ import { take } from 'rxjs';
 import { TableComponent } from '@core/components/table/table.component';
 import { InputDirective } from '@core/directives/input.directive';
 import { ChipsComponent } from '@core/components/chips/chips.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-my-accounts',
@@ -23,7 +24,8 @@ export class MyAccountsComponent implements OnInit {
 
   constructor(
     @Self() private readonly unsubscribeService$: UnsubscribeService,
-    private accountsService: AccountsService
+    private accountsService: AccountsService,
+    private router: Router,
   ){}
 
   public get accounts() {
@@ -42,5 +44,9 @@ export class MyAccountsComponent implements OnInit {
         this.unsubscribeService$.takeUntilDestroy,
       )
       .subscribe((res) => this.accountsSignal.set(res));
+  }
+
+  public goToAccount(accountId: string) {
+    this.router.navigate(['accounts', accountId]);
   }
 }

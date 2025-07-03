@@ -6,7 +6,8 @@ export type AppRouting =
   | 'submissions'
   | 'organizations'
   | 'goals_rules'
-  | 'admin';
+  | 'admin'
+  | 'account_id';
 
 export const appRouts: Record<
 AppRouting,
@@ -23,4 +24,5 @@ AppRouting,
   organizations: { routerPath: 'organizations' },
   goals_rules: { routerPath: 'goals_rules' },
   admin: { routerPath: 'admin' },
+  account_id: { routerPath: ':id' },
 }

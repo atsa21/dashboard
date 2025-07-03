@@ -1,0 +1,113 @@
+@import "src/assets/styles/vars";
+@import "src/assets/styles/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &-left {
+    display: flex;
+    gap: 20px;
+    padding-top: 48px;
+
+    & img {
+      height: 102px;
+      width: 102px;
+    }
+
+    & .details {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      &-items {
+        display: grid;
+        grid-template-columns: 1fr 1px 0.7fr 1px 0.7fr 1px 0.7fr;
+        gap: 12px;
+
+        & .body-text-2 {
+          padding-top: 4px;
+        }
+
+        & .address {
+          width: 220px;
+        }
+
+        & .line {
+          height: 44px;
+          width: 1px;
+          background-color: $primary-light;
+        }
+
+        & .grey {
+          color: $grey-light;
+        }
+      }
+    }
+  }
+
+  & .attention {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid $yellow;
+    border-radius: 24px;
+    background-color: $primary;
+    gap: 24px;
+
+    @media (max-width: 1440px) {
+      padding: 18px;
+      gap: 18px;
+    }
+
+    &-title {
+      @include svg-stroke($yellow);
+
+      display: flex;
+      gap: 12px;
+
+      & .title-2 {
+        padding-top: 2px;
+        color: $yellow;
+      }
+    }
+
+    &-items {
+      display: grid;
+      grid-template-columns: repeat(3, 190px);
+      column-gap: 42px;
+
+      @media (max-width: 1440px) {
+        grid-template-columns: repeat(3, 160px);
+        column-gap: 18px;
+      }
+
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 18px;
+      }
+
+      & .attention-item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        & .link {
+          color: $accent;
+          background: none;
+          outline: 0;
+          border: 0;
+          width: min-content;
+          white-space: nowrap;
+        }
+      }
+
+      & .body-text-2 {
+        color: $dark-grey;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

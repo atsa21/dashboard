@@ -1,0 +1,54 @@
+@if (account) {
+  <div class="header">
+    <div class="header-left">
+      <img [src]="'assets/images/' + account.account.image"  alt="account image"/>
+      <div class="details">
+        <h1 class="title-1">{{ account.account.name }}</h1>
+        <div class="details-items">
+          <div class="address">
+            <p class="body-text-2">{{ account.account.address }}</p>
+          </div>
+
+          <div class="line"></div>
+
+          <div>
+            <p class="body-text-2 t-uppercase grey">Existing account</p>
+            <p class="body-text-2">{{ account.account.existing_account }}</p>
+          </div>
+
+          <div class="line"></div>
+
+          <div>
+            <p class="body-text-2 t-uppercase grey">Broker</p>
+            <p class="body-text-2">{{ account.broker.name }} {{ account.broker.last_name }}</p>
+          </div>
+
+          <div class="line"></div>
+
+          <div>
+            <p class="body-text-2 t-uppercase grey">Underwriter</p>
+            <p class="body-text-2">{{ account.account.underwriter.name }} {{ account.account.underwriter.last_name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attention">
+      <div class="attention-title">
+        <app-icon url="warning.svg"></app-icon>
+        <h2 class="title-2">Need Attention</h2>
+      </div>
+      
+      <div class="attention-items">
+        @for (warning of warnings; track warning) {
+          <div class="attention-item">
+            <p class="title-2">{{ warning.title }}</p>
+            <p class="body-text-2">{{ warning.subtitle }}</p>
+            <button class="body-text-2 link">{{ warning.action }} →</button>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+}
+

@@ -7,6 +7,10 @@ export interface AccountItemModel {
   id: number;
   name: string;
   type: IKeyValue<EAccountType>;
+  image: string;
+  address: string;
+  existing_account: number;
+  underwriter: Partial<UserModel>;
 }
 
 export interface AccountModel {

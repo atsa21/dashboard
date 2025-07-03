@@ -8,6 +8,7 @@ import { GoalsRulesComponent } from './pages/goals-rules/goals-rules.component';
 import { SubmissionsComponent } from './pages/submissions/submissions.component';
 import { OrganizationsComponent } from './pages/organizations/organizations.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { AccountDetailsComponent } from './pages/accounts/components/account-details/account-details.component';
 
 export const children: Routes = [
   { 
@@ -22,6 +23,12 @@ export const children: Routes = [
   { 
     path: appRouts.accounts.routerPath,
     component: AccountsComponent,
+    children: [
+      {
+        path: appRouts.account_id.routerPath,
+        component: AccountDetailsComponent,
+      }
+    ]
   },
   { 
     path: appRouts.brokers.routerPath,

@@ -9,6 +9,13 @@
         "type": {
           "display": "Large Enterprise",
           "value": "large_enterprise"
+        },
+        "image": "account-image-1.png",
+        "address": "413 Harbor Boulevard, Suite 300 Seattle, WA 98104",
+        "existing_account": 11890,
+        "underwriter": {
+          "name": "Emily",
+          "last_name": "Clark"
         }
       },
       "line": {
@@ -45,6 +52,13 @@
         "type": {
           "display": "Shipping Logistics",
           "value": "shipping_logistics"
+        },
+        "image": "account-image-1.png",
+        "address": "422 Rois Boulevard, Suite 100 Seattle, WA 23425",
+        "existing_account": 23066,
+        "underwriter": {
+          "name": "David",
+          "last_name": "Nguyen"
         }
       },
       "line": {
@@ -81,6 +95,13 @@
         "type": {
           "display": "Energy Sector",
           "value": "energy_sector"
+        },
+        "image": "account-image-1.png",
+        "address": "212 Venu Boulevard, Suite 10 Seattle, WA 23533",
+        "existing_account": 14232,
+        "underwriter": {
+          "name": "Sophia",
+          "last_name": "Martinez"
         }
       },
       "line": {
@@ -117,6 +138,13 @@
         "type": {
           "display": "Mid Market",
           "value": "mid_market"
+        },
+        "image": "account-image-1.png",
+        "address": "105 Revel Boulevard, Suite 500 Seattle, WA 34388",
+        "existing_account": 12044,
+        "underwriter": {
+          "name": "Liam",
+          "last_name": "Patel"
         }
       },
       "line": {
@@ -153,6 +181,13 @@
         "type": {
           "display": "Shipping Logistics",
           "value": "shipping_logistics"
+        },
+        "image": "account-image-1.png",
+        "address": "413 Harbor Boulevard, Suite 300 Seattle, WA 98104",
+        "existing_account": 14267,
+        "underwriter": {
+          "name": "Noah",
+          "last_name": "Johnson"
         }
       },
       "line": {

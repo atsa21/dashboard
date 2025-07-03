@@ -1,4 +1,5 @@
 @import "src/assets/styles/vars";
+@import "src/assets/styles/mixins";
 
 .header {
   height: 95px;
@@ -15,10 +16,30 @@
 
   &-actions {
     display: flex;
-    gap: 11px;
+    gap: 12px;
 
     input {
       width: 479px;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    padding: 0 64px;
+
+    &-actions {
+      gap: 10px;
+
+      input {
+        width: 240px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 36px;
+
+    &-actions input {
+      width: 180px;
     }
   }
 }

@@ -12,6 +12,7 @@
       [tableData]="accounts"
       [tableColumns]="myAccountsTableColumns"
       [height]="272"
+      (navigate)="goToAccount($event)"
     />
   </div>
 }

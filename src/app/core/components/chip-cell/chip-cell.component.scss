@@ -13,7 +13,8 @@
     width: min-content;
     gap: 6px;
     padding: 5px 8px;
-    align-items: self-start;
+    align-items: center;
+    white-space: nowrap;
 
     & .body-text-3 {
       color: $accent;

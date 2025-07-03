@@ -1,1 +1,11 @@
-<p>accounts works!</p>
+@if (!isLoading) {
+  <div class="">
+    <div class="header">
+      <p class="body-text-2">Accounts</p>
+      <p class="body-text-2"> // </p>
+      <p class="body-text-2 t-accent">{{ accountName }}</p>
+    </div>
+
+  </div>
+  <router-outlet />
+}

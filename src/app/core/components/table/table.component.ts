@@ -35,6 +35,7 @@ export class TableComponent<T> {
   @Input() tableFilters: FilterConfigModel[] = [];
   @Input() height = 392;
   @Output() filterUpdate: EventEmitter<FilterConfigModel> = new EventEmitter<FilterConfigModel>();
+  @Output() navigate: EventEmitter<string> = new EventEmitter<string>();
 
   public dataSource = new MatTableDataSource<any>();
   public columns: TableColumnsModel[] = [];
