@@ -1,4 +1,4 @@
-import { EAccountStatus, EAccountType, EWinnability } from "@core/enums";
+import { EAccountItemStatus, EAccountStatus, EAccountType, EWinnability } from "@core/enums";
 import { IKeyValue } from "./application.model";
 import { LineModel } from "./line.model";
 import { UserModel } from "./user.model";
@@ -11,6 +11,7 @@ export interface AccountItemModel {
   address: string;
   existing_account: number;
   underwriter: Partial<UserModel>;
+  status: IKeyValue<EAccountItemStatus>
 }
 
 export interface AccountModel {

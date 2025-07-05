@@ -1,1 +1,17 @@
-<p>account-status works!</p>
+@if (account) {
+  <div class="container">
+    <h1 class="title-2">Account Status</h1>
+    <div class="statuses">
+      @for (status of accountStatusList; track status; let first = $first) {
+        @if (!first) {
+          <div class="dot-line" [class.grey]="!status.isSelected"></div>
+        }
+        <div class="status">
+          <app-icon [url]="status.isSelected ? 'sucess.svg' : 'pending.svg'"></app-icon>
+          <p class="title-3">{{ status.display }}</p>
+        </div>
+
+      }
+    </div>
+  </div>
+}

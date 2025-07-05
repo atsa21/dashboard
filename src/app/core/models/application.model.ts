@@ -7,6 +7,7 @@ export interface IKeyValue<T = unknown> {
   value: T;
   display: string;
   isSelected?: boolean;
+  position?: number;
 }
 
 export interface TabModel<T = any> {

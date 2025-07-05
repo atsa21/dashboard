@@ -1,0 +1,47 @@
+@import "src/assets/styles/vars";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  & .statuses {
+    display: grid;
+    grid-template-columns: 34px 1fr 34px 1fr 34px 1fr 34px 1fr 34px 1fr 34px;
+    padding: 20px 48px;
+    border-radius: 24px;
+    border: 1px solid $primary-light;
+    background-color: $primary;
+
+    @media (max-width: 1440px) {
+      overflow-x: scroll;
+    }
+
+    & .status {
+      display: flex;
+      position: relative;
+      height: 72px;
+      width: 34px;
+
+      & .title-3 {
+        position: absolute;
+        top: 42px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    & .dot-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 19px;
+      border-bottom: 2px dashed $green;
+      min-width: 100px;
+
+      &.grey {
+        border-color: $dark-grey;
+      }
+    }
+  }
+}

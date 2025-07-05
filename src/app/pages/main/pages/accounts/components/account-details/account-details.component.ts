@@ -8,6 +8,7 @@ import { AccountStatusComponent } from './components/account-status/account-stat
 import { DetailsComponent } from './components/details/details.component';
 import { CommunicationComponent } from './components/communication/communication.component';
 import { PoliciesTableComponent } from './components/policies-table/policies-table.component';
+import { CompilanceDocumentationComponent } from "./components/compilance-documentation/compilance-documentation.component";
 
 @Component({
   selector: 'app-account-details',
@@ -19,7 +20,8 @@ import { PoliciesTableComponent } from './components/policies-table/policies-tab
     DetailsComponent,
     CommunicationComponent,
     PoliciesTableComponent,
-  ],
+    CompilanceDocumentationComponent
+],
   templateUrl: './account-details.component.html',
   styleUrl: './account-details.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

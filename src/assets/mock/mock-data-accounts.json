@@ -13,6 +13,11 @@
         "image": "account-image-1.png",
         "address": "413 Harbor Boulevard, Suite 300 Seattle, WA 98104",
         "existing_account": 11890,
+        "status": {
+          "display": "Bind",
+          "value": "bind",
+          "position": 4
+        },
         "underwriter": {
           "name": "Emily",
           "last_name": "Clark"
@@ -56,6 +61,11 @@
         "image": "account-image-1.png",
         "address": "422 Rois Boulevard, Suite 100 Seattle, WA 23425",
         "existing_account": 23066,
+        "status": {
+          "display": "Review",
+          "value": "review",
+          "position": 2
+        },
         "underwriter": {
           "name": "David",
           "last_name": "Nguyen"
@@ -99,6 +109,11 @@
         "image": "account-image-1.png",
         "address": "212 Venu Boulevard, Suite 10 Seattle, WA 23533",
         "existing_account": 14232,
+        "status": {
+          "display": "Bind",
+          "value": "bind",
+          "position": 4
+        },
         "underwriter": {
           "name": "Sophia",
           "last_name": "Martinez"
@@ -142,6 +157,11 @@
         "image": "account-image-1.png",
         "address": "105 Revel Boulevard, Suite 500 Seattle, WA 34388",
         "existing_account": 12044,
+        "status": {
+          "display": "Submitted",
+          "value": "submitted",
+          "position": 1
+        },
         "underwriter": {
           "name": "Liam",
           "last_name": "Patel"
@@ -185,6 +205,11 @@
         "image": "account-image-1.png",
         "address": "413 Harbor Boulevard, Suite 300 Seattle, WA 98104",
         "existing_account": 14267,
+        "status": {
+          "display": "Submitted",
+          "value": "submitted",
+          "position": 1
+        },
         "underwriter": {
           "name": "Noah",
           "last_name": "Johnson"
