@@ -9,4 +9,6 @@ export enum ETableItemType {
   Line = 'line',
   Money = 'money',
   Ratio = 'ratio',
+  LineIcon = 'line_icon',
+  Rate = 'rate'
 }

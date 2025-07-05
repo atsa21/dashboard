@@ -12,8 +12,16 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 
+    &.red {
+      color: $red;
+    }
+
     &.blue {
       color: $accent;
+    }
+
+    &.grey {
+      color: $dark-grey;
     }
   }
 
@@ -40,7 +48,9 @@
       gap: 4px;
 
       &-column {
+        display: flex;
         flex-direction: column;
+        gap: 4px;
 
         & .light {
           color: $grey-light;

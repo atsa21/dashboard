@@ -14,6 +14,7 @@ import { ButtonDirective } from '@core/directives/button.directive';
 })
 export class ChipsComponent {
   @Input() chips: FilterConfigModel[] | null = null;
+  @Input() isAddAble = false;
   public isAddNew = signal(false);
   public inputControl = new FormControl();
 

@@ -9,6 +9,7 @@ export interface TableColumnsModel {
   icon?: string;
   blue_text?: boolean;
   colored?: boolean;
+  largeMoney?: boolean;
 }
 
 export interface FilterConfigModel {

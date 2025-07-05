@@ -16,8 +16,9 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    & .title-3 {
+    & .body-text-2 {
       color: $accent;
+      font-weight: 400;
     }
 
     &:not(.active):hover {

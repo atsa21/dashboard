@@ -1,1 +1,18 @@
-<p>policies-table works!</p>
+<div class="container">
+  <h1 class="title-2">Policies</h1>
+  @if (policies) {
+    <div class="box">
+      <div class="header">
+        <input appInput placeholder="Search" size="small" />
+        <app-chips [chips]="chips"></app-chips>
+      </div>
+      
+      <app-table
+        [tableData]="policies"
+        [tableColumns]="myAccountsTableColumns"
+        [height]="300"
+      />
+    </div>
+  }
+</div>
+

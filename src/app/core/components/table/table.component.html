@@ -22,10 +22,13 @@
                   <p class="body-text-3">{{ row[column.key][column?.subtitle_key || 'value'] }}</p>
                 }
                 @case (eTableItemType.Date) {
-                  <p class="body-text-3">{{ row[column.key] | date: 'MM/dd/yyyy' }}</p>
+                  <p class="body-text-3">{{ row[column.key] ? (row[column.key] | date: 'MM/dd/yyyy') : 'N/A' }}</p>
                 }
                 @case (eTableItemType.Status) {
                   <app-status [status]="row[column.key]"></app-status>
+                }
+                @case (eTableItemType.Rate) {
+                  <p class="body-text-3" [class.red]="row[column.key] >= 6">{{ row[column.key] ? row[column.key] + '%' : 'N/A' }}</p>
                 }
                 @case (eTableItemType.Money) {
                   <p class="body-text-3" [class.blue]="column?.blue_text">{{ row[column.key] | money }}</p>
@@ -56,6 +59,15 @@
                         {{ row[column.key][item] }}
                       }
                     </p>
+                  </div>
+                }
+                @case (eTableItemType.LineIcon) {
+                  <div class="table-item-column">
+                    <div class="table-item">
+                      <img [src]="'assets/icons/' + row[column.key].icon" />
+                      <p class="body-text-3">{{ row[column.key].name }}</p>
+                    </div>
+                    <p class="body-text-3 grey">{{ row[column.key].code }}</p>
                   </div>
                 }
                 @case (eTableItemType.Subtext) {

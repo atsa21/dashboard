@@ -7,11 +7,12 @@
         <p class="body-text-2">{{ item.display }}</p>
       </button>
     }
-
-    @if (isAddNew()) {
-      <input appInput placeholder="enter..." size="small" [formControl]="inputControl" (keydown)="onEnterKey($event)"/>
-    } @else {
-      <button appButton size="small" (click)="addChip()">+ New</button>
+    @if (isAddAble) {
+      @if (isAddNew()) {
+        <input appInput placeholder="enter..." size="small" [formControl]="inputControl" (keydown)="onEnterKey($event)"/>
+      } @else {
+        <button appButton size="small" (click)="addChip()">+ New</button>
+      }
     }
   </div>
 }

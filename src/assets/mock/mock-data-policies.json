@@ -6,13 +6,13 @@
       "line": {
         "id": 1,
         "name": "Marine Cargo",
-        "icon": "line-1.svg",
+        "icon": "line-icon-1.svg",
         "line_icon": "line-line-icon-1.svg",
         "code": 12038484
       },
       "premium": 650000,
       "eff_date": "2023-07-01T12:00:00Z",
-      "exd_date": "2024-07-01T12:00:00Z",
+      "exp_date": "2024-07-01T12:00:00Z",
       "status": {
         "value": "active",
         "display": "Active"
@@ -31,13 +31,13 @@
       "line": {
         "id": 2,
         "name": "General Liability",
-        "icon": "line-2.svg",
+        "icon": "line-icon-2.svg",
         "line_icon": "line-line-icon-2.svg",
         "code": 45278484
       },
       "premium": 480000,
       "eff_date": "2023-09-15T12:00:00Z",
-      "exd_date": "2024-09-15T12:00:00Z",
+      "exp_date": "2024-09-15T12:00:00Z",
       "status": {
         "value": "pending",
         "display": "Pending"
@@ -56,13 +56,13 @@
       "line": {
         "id": 3,
         "name": "Workers Comp",
-        "icon": "line-3.svg",
+        "icon": "line-icon-3.svg",
         "line_icon": "line-line-icon-3.svg",
         "code": 9465832
       },
       "premium": 900000,
       "eff_date": null,
-      "exd_date": "2024-01-10T12:00:00Z",
+      "exp_date": "2024-01-10T12:00:00Z",
       "status": {
         "value": "active",
         "display": "Active"
@@ -73,7 +73,7 @@
       "renewal_to_tech": 1180000,
       "renewal_tech": 1190000,
       "renewal_premiun": 1170000,
-      "rate_change": 11.7,
+      "rate_change": 0,
       "loss_ratio": 67
     },
     {
@@ -81,13 +81,13 @@
       "line": {
         "id": 4,
         "name": "Umbrella",
-        "icon": "line-4.svg",
+        "icon": "line-icon-4.svg",
         "line_icon": "line-line-icon-4.svg",
         "code": 6263587
       },
       "premium": 750000,
       "eff_date": null,
-      "exd_date": "2024-03-20T12:00:00Z",
+      "exp_date": "2024-03-20T12:00:00Z",
       "status": {
         "value": "active",
         "display": "Active"
@@ -106,13 +106,13 @@
       "line": {
         "id": 105,
         "name": "Property",
-        "icon": "line-5.svg",
+        "icon": "line-icon-5.svg",
         "line_icon": "line-line-icon-5.svg",
         "code": 7593452
       },
       "premium": 520000,
       "eff_date": "2023-05-05T12:00:00Z",
-      "exd_date": "2024-05-05T12:00:00Z",
+      "exp_date": "2024-05-05T12:00:00Z",
       "status": {
         "value": "pending",
         "display": "Pending"
@@ -131,13 +131,13 @@
       "line": {
         "id": 6,
         "name": "Giorgia Comp",
-        "icon": "line-3.svg",
+        "icon": "line-icon-3.svg",
         "line_icon": "line-line-icon-3.svg",
         "code": 32533590
       },
       "premium": 470000,
       "eff_date": "2023-11-11T12:00:00Z",
-      "exd_date": "2024-11-11T12:00:00Z",
+      "exp_date": "2024-11-11T12:00:00Z",
       "status": {
         "value": "active",
         "display": "Active"
@@ -156,13 +156,13 @@
       "line": {
         "id": 7,
         "name": "Leonardo Co",
-        "icon": "line-2.svg",
+        "icon": "line-icon-2.svg",
         "line_icon": "line-line-icon-2.svg",
         "code": 75663798
       },
       "premium": 860000,
       "eff_date": "2023-02-28T12:00:00Z",
-      "exd_date": "2024-02-28T12:00:00Z",
+      "exp_date": "2024-02-28T12:00:00Z",
       "status": {
         "value": "pending",
         "display": "Pending"

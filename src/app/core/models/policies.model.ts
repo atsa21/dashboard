@@ -7,7 +7,7 @@ export interface PoliciesModel {
   line: LineModel;
   premium: string;
   eff_date: string;
-  exd_date: string;
+  exp_date: string;
   status: IKeyValue<EPoliciesStatus>;
   expiring_tech: number;
   expiring_premium: number;
