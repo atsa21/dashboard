@@ -4,6 +4,8 @@
   gap: 42px;
 
   & .row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 18px;
   }
 }

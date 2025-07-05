@@ -1,0 +1,38 @@
+@import "src/assets/styles/vars";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  &-title {
+    height: 20px;
+    display: flex;
+    gap: 12px;
+  }
+
+  & .box {
+    height: 159px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 38px 48px;
+    border-radius: 24px;
+    gap: 38px;
+    border: 1px solid $primary-light;
+    background-color: $primary;
+
+    @media (max-width: 1440px) {
+      overflow-x: scroll;
+    }
+
+    & .item {
+      height: 20px;
+      display: flex;
+      gap: 12px;
+
+      p {
+        padding-top: 4px;
+      }
+    }
+  }
+}
