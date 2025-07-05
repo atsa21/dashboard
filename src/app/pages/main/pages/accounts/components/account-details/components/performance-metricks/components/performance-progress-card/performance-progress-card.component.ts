@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ProgressRatioComponent } from '@core/components/progress-ratio/progress-ratio.component';
 import { PerformanceProgressCardModel } from './models/performance-progress-card.model';
+import { EProgressRatio } from '@core/components/progress-ratio/enum/progress-ratio.enum';
 
 @Component({
   selector: 'app-performance-progress-card',
@@ -11,4 +12,5 @@ import { PerformanceProgressCardModel } from './models/performance-progress-card
 })
 export class PerformanceProgressCardComponent {
   @Input() card!: PerformanceProgressCardModel;
+  public eProgressRatio = EProgressRatio;
 }

@@ -1,0 +1,20 @@
+@import "src/assets/styles/vars";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: $secondary;
+  width: 311px;
+  gap: 8px;
+
+  &-title {
+    display: flex;
+    gap: 18px;
+  }
+
+  & .title-3 {
+    color: $dark-grey;
+  }
+}

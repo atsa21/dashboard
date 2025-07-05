@@ -1,0 +1,180 @@
+{
+  "count": 7,
+  "results": [
+    {
+      "id": 1,
+      "line": {
+        "id": 1,
+        "name": "Marine Cargo",
+        "icon": "line-1.svg",
+        "line_icon": "line-line-icon-1.svg",
+        "code": 12038484
+      },
+      "premium": 650000,
+      "eff_date": "2023-07-01T12:00:00Z",
+      "exd_date": "2024-07-01T12:00:00Z",
+      "status": {
+        "value": "active",
+        "display": "Active"
+      },
+      "expiring_tech": 900000,
+      "expiring_premium": 850000,
+      "expiring_to_tech": 800000,
+      "renewal_to_tech": 950000,
+      "renewal_tech": 1000000,
+      "renewal_premiun": 980000,
+      "rate_change": 5.5,
+      "loss_ratio": 22
+    },
+    {
+      "id": 2,
+      "line": {
+        "id": 2,
+        "name": "General Liability",
+        "icon": "line-2.svg",
+        "line_icon": "line-line-icon-2.svg",
+        "code": 45278484
+      },
+      "premium": 480000,
+      "eff_date": "2023-09-15T12:00:00Z",
+      "exd_date": "2024-09-15T12:00:00Z",
+      "status": {
+        "value": "pending",
+        "display": "Pending"
+      },
+      "expiring_tech": 600000,
+      "expiring_premium": 550000,
+      "expiring_to_tech": 700000,
+      "renewal_to_tech": 750000,
+      "renewal_tech": 800000,
+      "renewal_premiun": 780000,
+      "rate_change": 8.2,
+      "loss_ratio": 45
+    },
+    {
+      "id": 3,
+      "line": {
+        "id": 3,
+        "name": "Workers Comp",
+        "icon": "line-3.svg",
+        "line_icon": "line-line-icon-3.svg",
+        "code": 9465832
+      },
+      "premium": 900000,
+      "eff_date": null,
+      "exd_date": "2024-01-10T12:00:00Z",
+      "status": {
+        "value": "active",
+        "display": "Active"
+      },
+      "expiring_tech": 1200000,
+      "expiring_premium": 1100000,
+      "expiring_to_tech": 1150000,
+      "renewal_to_tech": 1180000,
+      "renewal_tech": 1190000,
+      "renewal_premiun": 1170000,
+      "rate_change": 11.7,
+      "loss_ratio": 67
+    },
+    {
+      "id": 4,
+      "line": {
+        "id": 4,
+        "name": "Umbrella",
+        "icon": "line-4.svg",
+        "line_icon": "line-line-icon-4.svg",
+        "code": 6263587
+      },
+      "premium": 750000,
+      "eff_date": null,
+      "exd_date": "2024-03-20T12:00:00Z",
+      "status": {
+        "value": "active",
+        "display": "Active"
+      },
+      "expiring_tech": 950000,
+      "expiring_premium": 900000,
+      "expiring_to_tech": 920000,
+      "renewal_to_tech": 970000,
+      "renewal_tech": 990000,
+      "renewal_premiun": 980000,
+      "rate_change": 6.8,
+      "loss_ratio": 33
+    },
+    {
+      "id": 5,
+      "line": {
+        "id": 105,
+        "name": "Property",
+        "icon": "line-5.svg",
+        "line_icon": "line-line-icon-5.svg",
+        "code": 7593452
+      },
+      "premium": 520000,
+      "eff_date": "2023-05-05T12:00:00Z",
+      "exd_date": "2024-05-05T12:00:00Z",
+      "status": {
+        "value": "pending",
+        "display": "Pending"
+      },
+      "expiring_tech": 700000,
+      "expiring_premium": 650000,
+      "expiring_to_tech": 680000,
+      "renewal_to_tech": 720000,
+      "renewal_tech": 740000,
+      "renewal_premiun": 730000,
+      "rate_change": 4.1,
+      "loss_ratio": 18
+    },
+    {
+      "id": 6,
+      "line": {
+        "id": 6,
+        "name": "Giorgia Comp",
+        "icon": "line-3.svg",
+        "line_icon": "line-line-icon-3.svg",
+        "code": 32533590
+      },
+      "premium": 470000,
+      "eff_date": "2023-11-11T12:00:00Z",
+      "exd_date": "2024-11-11T12:00:00Z",
+      "status": {
+        "value": "active",
+        "display": "Active"
+      },
+      "expiring_tech": 600000,
+      "expiring_premium": 550000,
+      "expiring_to_tech": 590000,
+      "renewal_to_tech": 630000,
+      "renewal_tech": 650000,
+      "renewal_premiun": 640000,
+      "rate_change": 3.9,
+      "loss_ratio": 12
+    },
+    {
+      "id": 7,
+      "line": {
+        "id": 7,
+        "name": "Leonardo Co",
+        "icon": "line-2.svg",
+        "line_icon": "line-line-icon-2.svg",
+        "code": 75663798
+      },
+      "premium": 860000,
+      "eff_date": "2023-02-28T12:00:00Z",
+      "exd_date": "2024-02-28T12:00:00Z",
+      "status": {
+        "value": "pending",
+        "display": "Pending"
+      },
+      "expiring_tech": 1100000,
+      "expiring_premium": 1050000,
+      "expiring_to_tech": 1080000,
+      "renewal_to_tech": 1120000,
+      "renewal_tech": 1150000,
+      "renewal_premiun": 1130000,
+      "rate_change": 9.5,
+      "loss_ratio": 54
+    }
+  ]
+}

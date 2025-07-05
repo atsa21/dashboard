@@ -5,12 +5,15 @@
 
   & .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) minmax(300px, 471px);
+    grid-template-columns: repeat(3, 1fr) min-content;
     gap: 18px;
-    overflow-x: scroll;
+
+    @media (max-width: 1440px) {
+      overflow-x: scroll;
+    }
 
     & app-performance-card {
-      min-width: 300px;
+      max-width: 471px;
     }
   }
 }

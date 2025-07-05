@@ -1,7 +1,7 @@
 @if (progress) {
   <div class="container">
     <div class="amount" [ngStyle]="{ 'grid-template-columns': '1fr ' + titleWidth + 'px' }">
-      <div class="progress" [ngStyle]="{ height: progress.name ? height + 'px' : '38px'}">
+      <div class="progress" [ngStyle]="{ height: progress.name ? height + 'px' : '38px', width: maxPx + 'px'}">
         <div class="back-progress" [ngStyle]="{ height: height + 'px'}"></div>
         <div class="top-progress">
           <div

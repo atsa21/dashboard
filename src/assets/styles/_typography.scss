@@ -10,19 +10,19 @@
 }
 
 .h-1 {
-  @include font-base(48px, 400, 48px);
+  @include font-base(48px, 300, 48px);
 }
 
 .title-1 {
-  @include font-base(34px, 400, 38px);
+  @include font-base(34px, 300, 38px);
 }
 
 .title-2 {
-  @include font-base(24px, 400, 20px);
+  @include font-base(24px, 300, 20px);
 }
 
 .title-3 {
-  @include font-base(18px, 400, 20px);
+  @include font-base(18px, 300, 20px);
 }
 
 // BODY TEXT
@@ -34,19 +34,19 @@
 }
 
 .body-text-1 {
-  @include font-base(16px, 400, 18px);
+  @include font-base(16px, 300, 18px);
 }
 
 .body-text-2 {
-  @include font-base(14px, 400, 16px);
+  @include font-base(14px, 300, 16px);
 }
 
 .body-text-3 {
-  @include font-base(12px, 400, 14px);
+  @include font-base(12px, 300, 14px);
 }
 
 .body-text-4 {
-  @include font-base(10px, 400, 12px);
+  @include font-base(10px, 300, 12px);
 }
 
 // TEXT STYLING
@@ -60,48 +60,48 @@
 
 @media (max-width: 1440px) {
   .h-1 {
-    @include font-base(38px, 400, 40px);
+    @include font-base(38px, 300, 40px);
   }
 
   .title-1 {
-    @include font-base(24px, 400, 26px);
+    @include font-base(24px, 300, 26px);
   }
 
   .title-2 {
-    @include font-base(20px, 400, 18px);
+    @include font-base(20px, 300, 18px);
   }
 
   .title-3 {
-    @include font-base(16px, 400, 18px);
+    @include font-base(16px, 300, 18px);
   }
 
   .body-text-1 {
-    @include font-base(14px, 400, 16px);
+    @include font-base(14px, 300, 16px);
   }
 
   .body-text-2 {
-    @include font-base(12px, 400, 14px);
+    @include font-base(12px, 300, 14px);
   }
 
   .body-text-3 {
-    @include font-base(10px, 400, 12px);
+    @include font-base(10px, 300, 12px);
   }
 }
 
 @media (max-width: 767px) {
   .h-1 {
-    @include font-base(28px, 400, 30px);
+    @include font-base(28px, 300, 30px);
   }
 
   .title-1 {
-    @include font-base(20px, 400, 22px);
+    @include font-base(20px, 300, 22px);
   }
 
   .title-2 {
-    @include font-base(18px, 400, 20px);
+    @include font-base(18px, 300, 20px);
   }
 
   .title-3 {
-    @include font-base(16px, 400, 14px);
+    @include font-base(16px, 300, 14px);
   }
 }

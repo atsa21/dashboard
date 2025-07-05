@@ -1,0 +1,18 @@
+@if (item) {
+  <div class="item">
+    <div class="item-title">
+      @if (item.line.line_icon) {
+        <app-icon [url]="item.line.line_icon"></app-icon>
+      }
+      <h3>{{ item.line.name }}</h3>
+    </div>
+
+    <div class="item-text">
+      <p class="title-3">Premium: {{ item.renewal_premiun | money: 'long' }}</p>
+    </div>
+
+    <div class="item-text">
+      <p class="title-3">Eff.Date: {{ item.eff_date ? (item.eff_date | date : 'MM/dd/yyyy') : '---' }}</p>
+    </div>
+  </div>
+}

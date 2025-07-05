@@ -5,7 +5,7 @@
     </div>
     <div class="progress">
       @for (progress of card.value; track progress) {
-        <app-progress-ratio [progress]="progress" [titleWidth]="182" [height]="22" [maxPx]="234"/>
+        <app-progress-ratio [progress]="progress" [type]="eProgressRatio.Minimal"/>
       }
     </div>
   </div>

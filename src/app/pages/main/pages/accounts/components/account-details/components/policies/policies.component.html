@@ -1,8 +1,10 @@
 @if (policies) {
   <div class="container">
-    <h1 class="title-2">Performance Metricks</h1>
-    <div>
-
+    <h1 class="title-2">Policies</h1>
+    <div class="policies">
+      @for (item of policies.results; track item) {
+        <app-policies-item [item]="item" />
+      }
     </div>
   </div>
 }
