@@ -6,8 +6,12 @@
 
   & .amount {
     display: grid;
-    grid-template-columns: 1fr 34px;
+    grid-template-columns: 1fr min-content;
     column-gap: 4px;
+
+    & .title-3 {
+      white-space: nowrap;
+    }
   }
 }
 
@@ -15,8 +19,6 @@
   display: flex;
   position: relative;
   height: 38px;
-
-
 }
 
 .back-progress {

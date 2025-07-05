@@ -36,15 +36,15 @@
     <div class="attention">
       <div class="attention-title">
         <app-icon url="warning.svg"></app-icon>
-        <h2 class="title-2">Need Attention</h2>
+        <h2 class="title-3">Need Attention</h2>
       </div>
       
       <div class="attention-items">
         @for (warning of warnings; track warning) {
           <div class="attention-item">
-            <p class="title-2">{{ warning.title }}</p>
+            <p class="title-3">{{ warning.title }}</p>
             <p class="body-text-2">{{ warning.subtitle }}</p>
-            <button class="body-text-2 link">{{ warning.action }} →</button>
+            <button appButton color="link" size="small">{{ warning.action }} →</button>
           </div>
         }
       </div>

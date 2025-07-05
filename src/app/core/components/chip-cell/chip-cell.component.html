@@ -1,11 +1,7 @@
 @if (text) {
   <div class="chip" [class.border]="isBorder" [ngStyle]="{ background: numberColor }">
     @if (isRate) {
-      <div class="dot-box">
-        @for (dot of rateAmount; track dot) {
-          <div class="dot"></div>
-        }
-      </div>
+      <app-winnability-dots [winnability]="value" />
     }
 
     <p class="body-text-3" [class.dark]="isYellow">{{ typeof text === 'string' ? (text | uppercase) : text }}</p>

@@ -1,0 +1,29 @@
+@import "src/assets/styles/vars";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 38px 24px 16px 24px;
+  border-radius: 24px;
+  border: 1px solid $primary-light;
+  background-color: $primary;
+
+  &-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & .title {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+  }
+
+  & .progress {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

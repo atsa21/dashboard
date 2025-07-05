@@ -26,4 +26,18 @@
     border-radius: 20px;
     height: 40px;
   }
+
+  &.link {
+    padding: 4px 0;
+    color: $accent;
+    background: none;
+    outline: 0;
+    border: 0;
+    width: min-content;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

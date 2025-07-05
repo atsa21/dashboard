@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  & .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) minmax(300px, 471px);
+    gap: 18px;
+    overflow-x: scroll;
+
+    & app-performance-card {
+      min-width: 300px;
+    }
+  }
+}

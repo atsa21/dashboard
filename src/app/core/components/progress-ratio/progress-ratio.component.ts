@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, signal, ViewChild } from '@angular/core';
 import { PortfolioGoalObjectiveItem } from '@core/models/portfolio-goals.model';
 
 @Component({
@@ -11,14 +11,15 @@ import { PortfolioGoalObjectiveItem } from '@core/models/portfolio-goals.model';
 })
 export class ProgressRatioComponent {
   @Input() progress!: PortfolioGoalObjectiveItem;
+  @Input() maxPx = 197;
+  @Input() titleWidth = 40;
+  @Input() height = 25;
 
   public get progressAmount(): number {
-    return Math.round((this.progress.value / this.progress.objective_value) * 100);
+    return this.progress.name ? this.progress.value : Math.round((this.progress.value / this.progress.objective_value) * 100);
   }
 
   public get progressWidth(): number {
-    const maxPx = 197;
-
-    return (this.progressAmount / 100) * maxPx;
+    return (this.progressAmount / 100) * this.maxPx;
   }
 }

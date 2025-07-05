@@ -26,6 +26,9 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading.set(true);
-    this.userService.getUser().pipe(take(1), this.unsubscribeService$.takeUntilDestroy).subscribe(() => this.isLoading.set(false));
+    this.userService
+      .getUser()
+      .pipe(take(1), this.unsubscribeService$.takeUntilDestroy)
+      .subscribe(() => this.isLoading.set(false));
   }
 }

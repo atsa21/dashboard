@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-title-box">
+    <div class="title">
+      <h2 class="title-2">{{ card.title }}</h2>
+    </div>
+    <div class="progress">
+      @for (progress of card.value; track progress) {
+        <app-progress-ratio [progress]="progress" [titleWidth]="182" [height]="22" [maxPx]="234"/>
+      }
+    </div>
+  </div>
+</div>

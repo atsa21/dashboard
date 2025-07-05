@@ -1,0 +1,11 @@
+@if (account) {
+  <div class="container">
+    <h1 class="title-2">Performance Metricks</h1>
+    <div class="cards">
+      @for (card of cards; track card) {
+        <app-performance-card [card]="card"/>
+      }
+      <app-performance-progress-card [card]="progressCard"/>
+    </div>
+  </div>
+}

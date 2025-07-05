@@ -10,6 +10,7 @@ export interface PortfolioGoalItem {
 export interface PortfolioGoalObjectiveItem {
   value: number;
   objective_value: number;
+  name?: string;
 }
 
 export interface PortfolioGoalsModel {

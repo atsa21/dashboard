@@ -16,14 +16,14 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    & .title-2 {
+    & .title-3 {
       color: $accent;
     }
 
     &:not(.active):hover {
       background-color: $accent;
 
-      & .title-2 {
+      & .title-3 {
         color: $white;
       }
     }

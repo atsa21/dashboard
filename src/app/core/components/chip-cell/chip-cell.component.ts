@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { EWinnability } from '@core/enums';
+import { WinnabilityDotsComponent } from '../winnability-dots/winnability-dots.component';
 
 @Component({
   selector: 'app-chip-cell',
-  imports: [CommonModule],
+  imports: [CommonModule, WinnabilityDotsComponent],
   templateUrl: './chip-cell.component.html',
   styleUrl: './chip-cell.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -16,22 +17,6 @@ export class ChipCellComponent {
   @Input() isBorder = false;
   @Input() isRate = false;
   private yellow = '#FDD261';
-
-  public get rateAmount(): any {
-    switch(this.value) {
-      case EWinnability.Low: {
-        return [''];
-      }
-      case EWinnability.Medium: {
-        return ['', ''];
-      }
-      case EWinnability.Strong: {
-        return ['', '', ''];
-      }
-      default :
-      return ['', '', '', '']
-    }
-  }
 
   public get numberColor(): string {
     if (this.isColorRate) {
