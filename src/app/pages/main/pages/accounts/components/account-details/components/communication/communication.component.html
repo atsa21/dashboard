@@ -1,6 +1,26 @@
   <div class="container">
     <h1 class="title-2">Communication</h1>
-    <div class="box">
-      
-    </div>
+    @if (communication) {
+      <div class="box">
+        <div class="header">
+          <input appInput placeholder="Search" size="small" />
+          <app-chips [chips]="chips"></app-chips>
+        </div>
+        
+        <div class="body">
+          <div class="body-new">
+            @for (item of newCommunication; track item) {
+              <app-communication-item [item]="item"/>
+            }
+          </div>
+
+          <div class="body-other">
+            @for (item of communication; track item) {
+              <app-communication-item [item]="item"/>
+            }
+          </div>
+        </div>
+      </div>
+    }
   </div>
+

@@ -1,0 +1,38 @@
+@if (item) {
+  <div class="card" [class.new]="isNew">
+    <div class="card-item">
+      <div class="card-item-header">
+        @if (!isHistory) {
+          <div class="type">
+            <p class="body-text-3">{{ type }}</p>
+          </div>
+        }
+
+        <h1 class="title-2">{{ item.title }}</h1>
+      </div>
+
+      <p class="title-3 t-grey">
+        {{ item.created.created_by.name }}
+        {{
+          item.created.created_by.last_name +
+          ' // ' +
+          (item.created.created_on | date : 'MMM d')
+        }}
+      </p>
+
+      <div class="card-item-body">
+        <p class="title-3" [class.short]="!isNew">{{ item.text }}</p>
+        @if (item.attachments_count) {
+          <div class="attachments">
+            <app-icon url="attach.svg"/>
+            <p class="body-text-3">{{ item.attachments_count }} attachments</p>
+          </div>
+        }
+
+        @if (!isResponded) {
+          <button appButton>Reply</button>
+        }
+      </div>
+    </div>
+  </div>
+}

@@ -19,7 +19,6 @@ export const WorkQueueTableColumns: TableColumnsModel[] = [
     key: 'type',
     display: 'Type',
     type: ETableItemType.KeyValue,
-    subtitle_key: 'value',
   },
   {
     key: 'status',

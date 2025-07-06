@@ -9,3 +9,4 @@ export * from './news.model';
 export * from './account.model';
 export * from './warning.model';
 export * from './policies.model';
+export * from './communication.model';

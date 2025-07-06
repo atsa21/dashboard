@@ -1,0 +1,97 @@
+@import "src/assets/styles/vars";
+@import "src/assets/styles/mixins";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary;
+  border: 2px solid $secondary;
+  border-radius: 12px;
+  padding: 24px 22px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &.new {
+    border: 2px solid $blue;
+  }
+
+  &:hover {
+    border-color: $accent;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      & .title-3.short {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      & .attachments {
+        height: 28px;
+        display: flex;
+        gap: 12px;
+        background: rgba(59, 185, 121, .4);
+        border-radius: 14px;
+        padding: 0 18px;
+        width: min-content;
+        white-space: nowrap;
+        transition: all 0.3s ease-in-out;
+
+        & app-icon {
+          height: 14px;
+          width: 14px;
+          padding-top: 5px;
+        }
+
+        & .body-text-3 {
+          padding-top: 8px;
+        }
+        
+        &:hover {
+          @include svg-stroke($black);
+
+          background: $green;
+
+          & .body-text-3 {
+            color: black;
+          }
+        }
+      }
+
+      & button {
+        width: 121px;
+      }
+    }
+  }
+
+  & .type {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background-color: $blue;
+    padding: 0 12px;
+  }
+
+  & .title-2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

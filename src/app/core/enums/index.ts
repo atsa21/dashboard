@@ -5,3 +5,4 @@ export * from './e-account-type.enum';
 export * from './e-account-status.enum';
 export * from './e-winnability.enum';
 export * from './e-policies-status.enum';
+export * from './e-communication-type.enum';

@@ -19,7 +19,7 @@
                   <p class="body-text-3">{{ row[column.key] }}</p>
                 }
                 @case (eTableItemType.KeyValue) {
-                  <p class="body-text-3">{{ row[column.key][column?.subtitle_key || 'value'] }}</p>
+                  <p class="body-text-3">{{ row[column.key][column?.subtitle_key || 'display'] }}</p>
                 }
                 @case (eTableItemType.Date) {
                   <p class="body-text-3">{{ row[column.key] ? (row[column.key] | date: 'MM/dd/yyyy') : 'N/A' }}</p>
