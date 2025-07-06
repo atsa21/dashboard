@@ -1,0 +1,20 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": 1,
+      "title": "Breaking News: AI Revolutionizes Tech",
+      "dot": "#B93B3B"
+    },
+    {
+      "id": 2,
+      "title": "New capacity entering Marine market",
+      "dot": "#FDD261"
+    },
+    {
+      "id": 3,
+      "title": "Environment regulatory changes in CA",
+      "dot": "#1E40AF"
+    }
+  ]
+}

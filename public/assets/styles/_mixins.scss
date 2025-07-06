@@ -1,0 +1,27 @@
+@import "vars";
+
+@mixin font-base(
+  $size: $font-size-base,
+  $font-weight: 400,
+  $height: $line-height-base,
+  $font-style: normal,
+  $font-family: Poppins,
+) {
+  font: $font-weight $font-style #{$size}/#{$height $font-family};
+}
+
+@mixin svg-stroke($color) {
+  &::ng-deep svg {
+    & path, & circle {
+      stroke: $color;
+    }
+  }
+}
+
+@mixin svg-fill($color) {
+  &::ng-deep svg {
+    & path, & circle {
+      fill: $color;
+    }
+  }
+}

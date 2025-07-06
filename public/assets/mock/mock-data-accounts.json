@@ -1,0 +1,245 @@
+{
+  "count": 5,
+  "results": [
+    {
+      "id": 1,
+      "account": {
+        "id": 101,
+        "name": "Acme Corporation",
+        "type": {
+          "display": "Large Enterprise",
+          "value": "large_enterprise"
+        },
+        "image": "account-image-1.png",
+        "address": "413 Harbor Boulevard, Suite 300 Seattle, WA 98104",
+        "existing_account": 11890,
+        "status": {
+          "display": "Bind",
+          "value": "bind",
+          "position": 4
+        },
+        "underwriter": {
+          "name": "Emily",
+          "last_name": "Clark"
+        }
+      },
+      "line": {
+        "id": 201,
+        "name": "General Liability"
+      },
+      "broker": {
+        "id": "b1",
+        "email": "jane.doe@broker.com",
+        "name": "Jane",
+        "last_name": "Doe",
+        "task_count": 12
+      },
+      "renewal_date": "2024-09-15T12:00:00Z",
+      "premium": 900000,
+      "rated_premium": 800000,
+      "loss_ratio": 20,
+      "appetite": "High",
+      "status": {
+        "display": "Active",
+        "value": "active"
+      },
+      "triage": 150,
+      "winnability": {
+        "display": "Strong",
+        "value": "strong"
+      }
+    },
+    {
+      "id": 2,
+      "account": {
+        "id": 102,
+        "name": "Beta Shipping",
+        "type": {
+          "display": "Shipping Logistics",
+          "value": "shipping_logistics"
+        },
+        "image": "account-image-1.png",
+        "address": "422 Rois Boulevard, Suite 100 Seattle, WA 23425",
+        "existing_account": 23066,
+        "status": {
+          "display": "Review",
+          "value": "review",
+          "position": 2
+        },
+        "underwriter": {
+          "name": "David",
+          "last_name": "Nguyen"
+        }
+      },
+      "line": {
+        "id": 202,
+        "name": "Marine Insurance"
+      },
+      "broker": {
+        "id": "b2",
+        "email": "john.smith@broker.com",
+        "name": "John",
+        "last_name": "Smith",
+        "task_count": 8
+      },
+      "renewal_date": "2024-11-01T12:00:00Z",
+      "premium": 850000,
+      "rated_premium": 1200000,
+      "loss_ratio": 42,
+      "appetite": "Medium",
+      "status": {
+        "display": "Under Review",
+        "value": "under_review"
+      },
+      "triage": 162,
+      "winnability": {
+        "display": "Medium",
+        "value": "medium"
+      }
+    },
+    {
+      "id": 3,
+      "account": {
+        "id": 103,
+        "name": "Gamma Energy",
+        "type": {
+          "display": "Energy Sector",
+          "value": "energy_sector"
+        },
+        "image": "account-image-1.png",
+        "address": "212 Venu Boulevard, Suite 10 Seattle, WA 23533",
+        "existing_account": 14232,
+        "status": {
+          "display": "Bind",
+          "value": "bind",
+          "position": 4
+        },
+        "underwriter": {
+          "name": "Sophia",
+          "last_name": "Martinez"
+        }
+      },
+      "line": {
+        "id": 203,
+        "name": "Property Insurance"
+      },
+      "broker": {
+        "id": "b3",
+        "email": "alice.wong@broker.com",
+        "name": "Alice",
+        "last_name": "Wong",
+        "task_count": 5
+      },
+      "renewal_date": "2025-01-20T12:00:00Z",
+      "premium": 2200000,
+      "rated_premium": 1800000,
+      "loss_ratio": 25,
+      "appetite": "Cautious",
+      "status": {
+        "display": "Active",
+        "value": "active"
+      },
+      "triage": 175,
+      "winnability": {
+        "display": "Very Strong",
+        "value": "very_strong"
+      }
+    },
+    {
+      "id": 4,
+      "account": {
+        "id": 104,
+        "name": "Delta Markets",
+        "type": {
+          "display": "Mid Market",
+          "value": "mid_market"
+        },
+        "image": "account-image-1.png",
+        "address": "105 Revel Boulevard, Suite 500 Seattle, WA 34388",
+        "existing_account": 12044,
+        "status": {
+          "display": "Submitted",
+          "value": "submitted",
+          "position": 1
+        },
+        "underwriter": {
+          "name": "Liam",
+          "last_name": "Patel"
+        }
+      },
+      "line": {
+        "id": 204,
+        "name": "Cyber Insurance"
+      },
+      "broker": {
+        "id": "b4",
+        "email": "michael.lee@broker.com",
+        "name": "Michael",
+        "last_name": "Lee",
+        "task_count": 10
+      },
+      "renewal_date": "2024-12-10T12:00:00Z",
+      "premium": 9500000,
+      "rated_premium": 2400000,
+      "loss_ratio": 75,
+      "appetite": "Medium",
+      "status": {
+        "display": "Active",
+        "value": "active"
+      },
+      "triage": 188,
+      "winnability": {
+        "display": "Low",
+        "value": "low"
+      }
+    },
+    {
+      "id": 5,
+      "account": {
+        "id": 105,
+        "name": "Omega Logistics",
+        "type": {
+          "display": "Shipping Logistics",
+          "value": "shipping_logistics"
+        },
+        "image": "account-image-1.png",
+        "address": "413 Harbor Boulevard, Suite 300 Seattle, WA 98104",
+        "existing_account": 14267,
+        "status": {
+          "display": "Submitted",
+          "value": "submitted",
+          "position": 1
+        },
+        "underwriter": {
+          "name": "Noah",
+          "last_name": "Johnson"
+        }
+      },
+      "line": {
+        "id": 205,
+        "name": "Cargo Insurance"
+      },
+      "broker": {
+        "id": "b5",
+        "email": "susan.kim@broker.com",
+        "name": "Susan",
+        "last_name": "Kim",
+        "task_count": 7
+      },
+      "renewal_date": "2025-02-05T12:00:00Z",
+      "premium": 1100000,
+      "rated_premium": 3000000,
+      "loss_ratio": 90,
+      "appetite": "High",
+      "status": {
+        "display": "Under Review",
+        "value": "under_review"
+      },
+      "triage": 200,
+      "winnability": {
+        "display": "Strong",
+        "value": "strong"
+      }
+    }
+  ]
+}

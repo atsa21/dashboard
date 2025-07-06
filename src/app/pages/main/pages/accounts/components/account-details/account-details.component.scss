@@ -5,7 +5,12 @@
 
   & .row {
     display: grid;
-    grid-template-columns: 1fr 0.7fr;
+    grid-template-columns: 1.45fr 1fr;
     gap: 18px;
+
+    @media (max-width: 1220px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

@@ -6,10 +6,10 @@
         <div class="item">
           <h2 class="title-2">Overral Score</h2>
           <div class="score">
-            <h4 class="h-1">{{ winnability.position.score }}%</h4>
+            <h4 class="h-1">{{ winnability.position?.score }}%</h4>
             <app-chip-cell
-              [text]="winnability.winnability.display"
-              [value]="winnability.winnability.value"
+              [text]="winnability.winnability.display || ''"
+              [value]="winnability.winnability.value || ''"
               [isBorder]="true"
               [isRate]="true"
               [height]="38"
@@ -69,7 +69,7 @@
         </div>
       </div>
       <div class="row-3">
-        <div class="item">
+        <div class="item ai">
           <div class="item-title">
             <img src="assets/images/ai.svg" />
             <p class="title-2 t-green">AI-Powered Reccomendations</p>

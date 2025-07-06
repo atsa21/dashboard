@@ -1,0 +1,77 @@
+{
+  "count": 4,
+  "results": [
+    {
+      "id": 1,
+      "title": "Policy Renewal- Auto Insurance 5/15/25",
+      "type": {
+        "display": "NEW",
+        "value": "new"
+      },
+      "created": {
+        "created_by": {
+          "id": 1,
+          "name": "Michael",
+          "last_name": "Roberts"
+          },
+        "created_on": "2024-04-05T09:00:00Z"
+      },
+      "text": "Hello Arthur, I'm reaching out regarding the upcoming auto policy renewal for Real Estate Group, LLC. The current policy expires on 6/30/2024. Would you like to review coverage options before proceeding with the renewal? I've attached the current policy details and premium breakdown for your reference .",
+      "attachments_count": 3
+    },
+    {
+      "id": 2,
+      "title": "New Quote Request - Workers Comp Insurance",
+      "type": {
+        "display": "NEW",
+        "value": "new"
+      },
+      "created": {
+      "created_by": {
+        "id": 2,
+        "name": "Sarah",
+        "last_name": "Chen"
+        },
+      "created_on": "2024-04-05T09:00:00Z"
+      },
+      "text": "Hi Arthur, Real Estate Group has expressed interest in adding workers compensation coverage to their insurance portfolio. I've completed the initial risk assessment based",
+      "attachments_count": 3
+    },
+    {
+      "id": 3,
+      "title": "Policy Renewal- Auto Insurance 5/15/25",
+      "type": {
+        "display": "Responded",
+        "value": "responded"
+      },
+      "created": {
+      "created_by": {
+        "id": 1,
+        "name": "Michael",
+        "last_name": "Roberts"
+        },
+      "created_on": "2024-04-05T09:00:00Z"
+      },
+      "text": "Arthur, attached please find our submission for thr above mentioned applicant. We have some new",
+      "attachments_count": 0
+    },
+    {
+      "id": 4,
+      "title": "New Business: BPM Real Estate Group, LLC",
+      "type": {
+        "display": "History",
+        "value": "history"
+      },
+      "created": {
+      "created_by": {
+        "id": 1,
+        "name": "Michael",
+        "last_name": "Roberts"
+        },
+      "created_on": "2024-04-05T09:00:00Z"
+      },
+      "text": "Hello Arthur, I am pleased to present you with a submission on this client",
+      "attachments_count": 5
+    }
+  ]
+}

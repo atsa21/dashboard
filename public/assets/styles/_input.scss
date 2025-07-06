@@ -1,0 +1,40 @@
+@import "vars";
+@import "mixins";
+
+.app-input {
+  @include font-base(14px, 500, 14px);
+
+  width: 100%;
+  padding: 0 16px;
+  border: 1px solid $primary;
+  color: $beige;
+  background-color: $primary;
+  outline: none;
+
+  &::placeholder {
+    color: $secondary-light;
+  }
+
+  &:focus {
+    border-color: $accent;
+    outline: 0;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &-container {
+    width: 100%;
+  }
+
+  &.small {
+    border-radius: 14px;
+    height: 28px;
+  }
+
+  &.medium {
+    border-radius: 24px;
+    height: 48px;
+  }
+}

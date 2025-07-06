@@ -7,12 +7,31 @@
 
   &-top {
     display: grid;
-    grid-template-columns: 1fr 285px 285px;
+    grid-template-columns: minmax(400px, 1fr) 285px 285px;
     grid-template-rows: 285px 285px;
     gap: 18px;
     grid-template-areas: 
       "large middle small"
       "large middle second";
+
+    @media (max-width: 1190px) {
+      grid-template-columns: 1fr 1fr 240px 240px;
+      grid-template-rows: 285px 285px 240px;
+      grid-template-areas: 
+        "large large large large"
+        "large large large large"
+        "middle middle small second";
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 285px 285px 240px 240px;
+      grid-template-areas: 
+        "large large"
+        "large large"
+        "middle small"
+        "middle second";
+    }
 
     & app-work-queue {
       grid-area: large;

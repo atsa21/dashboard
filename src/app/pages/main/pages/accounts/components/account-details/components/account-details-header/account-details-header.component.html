@@ -34,19 +34,21 @@
     </div>
 
     <div class="attention">
-      <div class="attention-title">
-        <app-icon url="warning.svg"></app-icon>
-        <h2 class="title-2">Needs Attention</h2>
-      </div>
-      
-      <div class="attention-items">
-        @for (warning of warnings; track warning) {
-          <div class="attention-item">
-            <p class="title-3">{{ warning.title }}</p>
-            <p class="body-text-2">{{ warning.subtitle }}</p>
-            <button appButton color="link" size="small">{{ warning.action }} →</button>
-          </div>
-        }
+      <div class="attention-scroll">
+        <div class="attention-title">
+          <app-icon url="warning.svg"></app-icon>
+          <h2 class="title-2">Needs Attention</h2>
+        </div>
+        
+        <div class="attention-items">
+          @for (warning of warnings; track warning) {
+            <div class="attention-item">
+              <p class="title-3">{{ warning.title }}</p>
+              <p class="body-text-2">{{ warning.subtitle }}</p>
+              <button appButton color="link" size="small">{{ warning.action }} →</button>
+            </div>
+          }
+        </div>
       </div>
     </div>
   </div>

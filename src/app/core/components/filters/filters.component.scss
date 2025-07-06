@@ -3,7 +3,12 @@
 .filters {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 8px;
+
+  @media (max-width: 1240px) {
+    overflow-x: scroll;
+  }
 
   & .filter-item {
     display: flex;
@@ -16,6 +21,7 @@
     background-color: $black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
 
     & .title-3 {
       color: $grey-lighter;

@@ -12,6 +12,10 @@
       overflow-x: scroll;
     }
 
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(3, 220px) min-content;
+    }
+
     & app-performance-card {
       max-width: 471px;
     }

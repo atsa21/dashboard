@@ -1,0 +1,35 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": 1,
+      "title": "Marine Surley Required",
+      "type": {
+        "value": "details_link",
+        "display": "Details Link"
+      },
+      "subtitle": "Scheduled for 06/12/2025",
+      "action": "View details link"
+    },
+    {
+      "id": 2,
+      "title": "Loss Control Complete",
+      "type": {
+        "value": "report",
+        "display": "Report"
+      },
+      "subtitle": "Last insection: 02/15/2025",
+      "action": "View report"
+    },
+    {
+      "id": 3,
+      "title": "Claims Review Required",
+      "type": {
+        "value": "claims",
+        "display": "claims"
+      },
+      "subtitle": "3 open claims // $245,000 TTL",
+      "action": "View claims"
+    }
+  ]
+}

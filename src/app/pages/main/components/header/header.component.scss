@@ -38,6 +38,15 @@
   @media (max-width: 767px) {
     padding: 0 36px;
 
+    & .title-1 {
+      display: flex;
+      flex-direction: column;
+
+      & .tasks {
+        @include font-base(16px, 300, 18px);
+      }
+    }
+
     &-actions input {
       width: 180px;
     }

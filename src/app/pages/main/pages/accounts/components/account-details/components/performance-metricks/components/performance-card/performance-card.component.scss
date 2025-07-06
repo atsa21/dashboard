@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 239px;
-  padding: 38px 24px 20px 24px;
+  padding: 34px 24px 20px 24px;
   border-radius: 24px;
   border: 1px solid $primary-light;
   background-color: $primary;
@@ -13,7 +13,7 @@
   &-title-box {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
 
     & .display {
       display: flex;
@@ -29,6 +29,9 @@
 
     & .title-2 {
       color: $dark-grey;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }

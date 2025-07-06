@@ -6,9 +6,13 @@
   gap: 28px;
 
   &-title {
-    height: 20px;
+    height: 26px;
     display: flex;
     gap: 12px;
+
+    & .link {
+      height: 26px;
+    }
   }
 
   & .box {
@@ -22,6 +26,7 @@
     background-color: $primary;
 
     @media (max-width: 1440px) {
+      overflow-y: hidden;
       overflow-x: scroll;
     }
 

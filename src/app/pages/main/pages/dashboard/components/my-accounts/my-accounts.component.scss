@@ -18,6 +18,11 @@
 
     &-filters {
       display: flex;
+
+      @media (max-width: 1240px) {
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
     }
 
     & .title-3 {

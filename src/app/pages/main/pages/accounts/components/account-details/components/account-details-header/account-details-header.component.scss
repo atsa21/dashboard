@@ -4,6 +4,12 @@
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 18px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &-left {
     display: flex;
@@ -55,6 +61,17 @@
     background-color: $primary;
     gap: 24px;
     max-width: 710px;
+
+    &-scroll {
+      @media (max-width: 1190px) {
+        max-width: 300px;
+        overflow-x: scroll;
+      }
+
+      @media (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
 
     @media (max-width: 1440px) {
       padding: 18px;
