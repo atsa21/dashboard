@@ -4,7 +4,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Site
 
-Navigate to [Dashboard]([https://todo-list-app-45cf7.firebaseapp.com/login](https://ddashboardd-32356.web.app/dashboard)) to see deployed app.
+Navigate to [Dashboard](https://ddashboardd-32356.web.app/dashboard) to see deployed app.
 ![image](https://github.com/user-attachments/assets/12a4ef6f-5bb7-472b-9e3f-ee2b8e74fcd0)
 
 ## 📦 Technologies Used
