@@ -1,0 +1,60 @@
+@import "src/assets/styles/vars";
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  & .item {
+    display: flex;
+    gap: 12px;
+
+    & .number {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $yellow;
+
+      & .body-text-2 {
+        color: $yellow;
+      }
+    }
+
+    & .description {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      & .progress {
+        display: flex;
+        height: 20px;
+
+        & .body-text-1 {
+          padding-left: 14px;
+        }
+
+        &-item {
+          border-radius: 0 12px 12px 0;
+          background: linear-gradient(90deg, $secondary 0%, $yellow 100%);
+
+          &.increase {
+            background: linear-gradient(90deg, $secondary 0%, $green 100%);
+          }
+        }
+      }
+    }
+
+    &.increase {
+      & .number {
+        border-color: $green;
+
+        & .body-text-2 {
+          color: $green;
+        }
+      }
+    }
+  }
+}

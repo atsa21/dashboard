@@ -1,0 +1,103 @@
+@if(winnability) {
+  <div class="page">
+    <h1 class="h-1">Winnability</h1>
+    <div class="content">
+      <div class="row-1">
+        <div class="item">
+          <h2 class="title-2">Overral Score</h2>
+          <div class="score">
+            <h4 class="h-1">{{ winnability.position.score }}%</h4>
+            <app-chip-cell
+              [text]="winnability.winnability.display"
+              [value]="winnability.winnability.value"
+              [isBorder]="true"
+              [isRate]="true"
+              [height]="38"
+            />
+          </div>
+        </div>
+        <div class="item">
+          <h2 class="title-2">Historical trend</h2>
+          <img class="graphs" src="assets/images/graphs.svg" alt="graphs"/>
+        </div>
+        <div class="item">
+          <h2 class="title-2">Position</h2>
+          <div class="position">
+            <app-progress-ratio 
+              [progress]="{
+                value: winnability.position.score,
+                objective_value: 100,
+                name: 'Your score:'
+              }"
+              [type]="eProgressRatio.Minimal"
+            />
+            <app-progress-ratio 
+              [progress]="{
+                value: winnability.position.avg,
+                objective_value: 100,
+                name: 'Market Avg:'
+              }"
+              [type]="eProgressRatio.Minimal"
+            />
+            <app-progress-ratio 
+              [progress]="{
+                value: winnability.position.competition,
+                objective_value: 100,
+                name: 'Top competition:'
+              }"
+              [type]="eProgressRatio.Minimal"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="item">
+          <div class="item-title">
+            <img src="assets/images/increase.svg" />
+            <p class="title-2">Increasign Winnability</p>
+          </div>
+
+          <app-winnability-graphs [changeList]="winnability.increasing" [isIncrease]="true"/>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <img src="assets/images/decrease.svg" />
+            <p class="title-2">Decreasign Winnability</p>
+          </div>
+
+          <app-winnability-graphs [changeList]="winnability.decreasing"/>
+        </div>
+      </div>
+      <div class="row-3">
+        <div class="item">
+          <div class="item-title">
+            <img src="assets/images/ai.svg" />
+            <p class="title-2 t-green">AI-Powered Reccomendations</p>
+          </div>
+          <div class="ai-item">
+            <div class="ai-text">
+              <p class="title-3">Offer 5% premium discount fo 3-year commitment</p>
+              <p class="title-3 t-grey">
+                Historical win rate increases 24% with multy-year commitment.
+                Current pricing is 12% above market average. This approach
+                would strenghthen retention while maintaining adequare profitability.
+              </p>
+            </div>
+            <button appButton color="green">Apply</button>
+          </div>
+          <div class="ai-item">
+            <div class="ai-text">
+              <p class="title-3">Offer 5% premium discount fo 3-year commitment</p>
+              <p class="title-3 t-grey">
+                Historical win rate increases 24% with multy-year commitment.
+                Current pricing is 12% above market average. This approach
+                would strenghthen retention while maintaining adequare profitability.
+              </p>
+            </div>
+            <button appButton color="green">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

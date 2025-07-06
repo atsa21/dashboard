@@ -1,0 +1,21 @@
+<div class="sidebar">
+  @for (items of sidebar; track items) {
+    <div class="sidebar-item" [class.selected]="items.isSelected">
+      <div class="sidebar-title">
+        <h2 class="title-2 t-uppercase">{{ items.title }}</h2>
+        <div class="count">
+          <h2 class="title-2 t-uppercase">{{ items.count }}</h2>
+        </div>
+      </div>
+      @if (items.isSelected) {
+        <div class="sidebar-wrapped-items">
+          @for (item of items.items; track item) {
+            <div class="item">
+              <p class="title-3" [class.t-accent]="item.isSelected">{{ item.display }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

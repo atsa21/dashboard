@@ -4,4 +4,5 @@ export type ButtonSizeType =
 
 export type ButtonColorType =
   | 'accent' // button with accent background
-  | 'link'; // button with none background and accent text
+  | 'link' // button with none background and accent text
+  | 'green'; // button with green background

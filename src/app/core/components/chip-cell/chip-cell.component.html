@@ -1,5 +1,13 @@
 @if (text) {
-  <div class="chip" [class.border]="isBorder" [ngStyle]="{ background: numberColor }">
+  <div
+    class="chip"
+    [class.border]="isBorder"
+    [ngStyle]="{
+      background: numberColor,
+      height: height + 'px',
+      padding: height === 24 ? '6px 8px' : '8px 12px',
+      'border-radius': height === 24 ? '12px' : '19px'
+    }">
     @if (isRate) {
       <app-winnability-dots [winnability]="value" />
     }

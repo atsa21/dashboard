@@ -18,11 +18,11 @@
 }
 
 .title-2 {
-  @include font-base(24px, 300, 20px);
+  @include font-base(24px, 300, 26px);
 }
 
 .title-3 {
-  @include font-base(18px, 300, 20px);
+  @include font-base(18px, 300, 22px);
 }
 
 // BODY TEXT
@@ -58,6 +58,14 @@
   color: $accent;
 }
 
+.t-grey {
+  color: $dark-grey;
+}
+
+.t-green {
+  color: $green;
+}
+
 @media (max-width: 1440px) {
   .h-1 {
     @include font-base(38px, 300, 40px);
@@ -68,7 +76,7 @@
   }
 
   .title-2 {
-    @include font-base(20px, 300, 18px);
+    @include font-base(20px, 300, 22px);
   }
 
   .title-3 {

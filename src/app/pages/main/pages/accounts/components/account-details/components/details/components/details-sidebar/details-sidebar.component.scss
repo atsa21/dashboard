@@ -1,0 +1,63 @@
+@import "src/assets/styles/vars";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 346px;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 28px;
+    border-radius: 12px;
+
+    &:hover:not(.selected) .title-2 {
+      cursor: pointer;
+      color: $accent;
+      transition: all 0.2s ease-in-out;
+    }
+
+    & .count {
+      height: 39px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background-color: $secondary;
+    }
+
+    &.selected {
+      background-color: $secondary;
+
+      & .count {
+        border: 1px solid $beige;
+      }
+
+
+    }
+  }
+
+  &-title {
+    height: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-wrapped-items {
+    display: flex;
+    flex-direction: column;
+
+    & .item {
+      display: flex;
+      padding: 24px;
+      cursor: pointer;
+
+      & .title-3:hover:not(.t-accent) {
+        color: $accent;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

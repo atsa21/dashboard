@@ -16,6 +16,7 @@ export class ChipCellComponent {
   @Input() isColorRate = false;
   @Input() isBorder = false;
   @Input() isRate = false;
+  @Input() height = 24;
   private yellow = '#FDD261';
 
   public get numberColor(): string {

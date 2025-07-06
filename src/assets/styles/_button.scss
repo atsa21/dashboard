@@ -40,4 +40,13 @@
       text-decoration: underline;
     }
   }
+
+  &.green {
+    color: $black;
+    background-color: $green;
+
+    &:hover {
+      background-color: $beige;
+    }
+  }
 }

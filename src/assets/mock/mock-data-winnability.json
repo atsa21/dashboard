@@ -1,0 +1,48 @@
+{
+  "id": 1,
+  "winnability": {
+    "display": "Very Strong",
+    "value": "very_strong"
+  },
+  "position": {
+    "score": 82,
+    "avg": 68,
+    "competition": 88
+  },
+  "increasing": [
+    {
+      "title": "Brokers relashionship",
+      "value": 28
+    },
+    {
+      "title": "Loss history",
+      "value": 22
+    },
+    {
+      "title": "Industry growth",
+      "value": 16
+    },
+    {
+      "title": "Multiline opportunity",
+      "value": 11
+    }
+  ],
+  "decreasing": [
+    {
+      "title": "Premium pricing",
+      "value": -24
+    },
+    {
+      "title": "Total exposure",
+      "value": -18
+    },
+    {
+      "title": "Loss ratio trend",
+      "value": -13
+    },
+    {
+      "title": "Market competition",
+      "value": -5
+    }
+  ]
+}

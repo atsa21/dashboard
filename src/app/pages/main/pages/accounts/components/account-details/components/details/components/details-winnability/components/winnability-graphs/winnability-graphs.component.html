@@ -1,0 +1,22 @@
+<div class="items">
+  @for (item of changeList; track item; let idx = $index) {
+    <div class="item" [class.increase]="isIncrease">
+      <div class="number">
+        <p class="body-text-2">{{ idx + 1 }}</p>
+      </div>
+      <div class="description">
+        <p class="title-3">{{ item.title }}</p>
+        <div class="progress">
+          <div
+            class="progress-item"
+            [class.increase]="isIncrease"
+            [ngStyle]="{ width: idx === 0 ? '274px': idx === 1 ? '225px' : idx === 2 ? '182px' : '128px'}"
+            ></div>
+          <p class="body-text-1 t-grey">@if (isIncrease) {
+            <span>+</span>
+          }{{ item.value }}%</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>
