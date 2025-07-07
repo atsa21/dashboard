@@ -2,6 +2,27 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
 
+## Site
+
+Navigate to [Dashboard](https://ddashboardd-32356.web.app/dashboard) to see deployed app.
+![image](https://github.com/user-attachments/assets/12a4ef6f-5bb7-472b-9e3f-ee2b8e74fcd0)
+
+## 📦 Technologies Used
+
+- **Angular 19** – Framework
+- **TypeScript** – Static typing for scalable apps
+- **SCSS** – Modular CSS with variables and nesting
+- **Angular Material** – UI component library
+- **RxJS** – Reactive programming with observables
+- **Firebase** – Hosting and optional backend
+- **Node.js & npm** – Environment & dependency manager
+
+## 🤖 AI Tools Used
+
+- **ChatGPT** – For generating reusable components and refactoring TypeScript
+- **Copilot** – For generating json mocks and interfaces
+- **Uizard** – For exporting font used in mock
+
 ## Development server
 
 To start a local development server, run:
